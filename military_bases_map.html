@@ -1,0 +1,4509 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_db29f070197d8c80c9c4dee9599524b1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_db29f070197d8c80c9c4dee9599524b1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_db29f070197d8c80c9c4dee9599524b1 = L.map(
+                "map_db29f070197d8c80c9c4dee9599524b1",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0cebae6cff09c0262d67c92817c85bd9 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0cebae6cff09c0262d67c92817c85bd9.addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var marker_6b8a5264ec0d03ac5dc7c136b648bd38 = L.marker(
+                [14.8041, 74.1335],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_08d6cadb7ed77b3fd9bb43a000638477 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8b983ccd98799f6e78d31dac3c30d40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21952bd632e7b65165f1e51438427d38 = $(`<div id="html_21952bd632e7b65165f1e51438427d38" style="width: 100.0%; height: 100.0%;">INS Kadamba (India) Type: Navy</div>`)[0];
+                popup_a8b983ccd98799f6e78d31dac3c30d40.setContent(html_21952bd632e7b65165f1e51438427d38);
+            
+        
+
+        marker_6b8a5264ec0d03ac5dc7c136b648bd38.bindPopup(popup_a8b983ccd98799f6e78d31dac3c30d40)
+        ;
+
+        
+    
+    
+                marker_6b8a5264ec0d03ac5dc7c136b648bd38.setIcon(icon_08d6cadb7ed77b3fd9bb43a000638477);
+            
+    
+            var marker_75064544983b24d608e3973c9e67b2a8 = L.marker(
+                [19.6697, 72.9312],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_f691ad659d42cf54041f265655e9d63a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b16bd17c88fbb53a3b96c66e835afc62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08846b359f97fea5857ce1054e85fb5f = $(`<div id="html_08846b359f97fea5857ce1054e85fb5f" style="width: 100.0%; height: 100.0%;">INS Vikramaditya (India) Type: Navy (Aircraft Carrier)</div>`)[0];
+                popup_b16bd17c88fbb53a3b96c66e835afc62.setContent(html_08846b359f97fea5857ce1054e85fb5f);
+            
+        
+
+        marker_75064544983b24d608e3973c9e67b2a8.bindPopup(popup_b16bd17c88fbb53a3b96c66e835afc62)
+        ;
+
+        
+    
+    
+                marker_75064544983b24d608e3973c9e67b2a8.setIcon(icon_f691ad659d42cf54041f265655e9d63a);
+            
+    
+            var marker_4746c1409596ee2a50c76e27fa594fba = L.marker(
+                [12.5798, 79.7883],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_ee9e97b58c221fea2b9e082a174a09d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e891bdc0bc7eb71e75f8029571c209d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43fa8f746378bd1a03e1b2b7341f59e4 = $(`<div id="html_43fa8f746378bd1a03e1b2b7341f59e4" style="width: 100.0%; height: 100.0%;">INS Rajali (India) Type: Navy (Air Station)</div>`)[0];
+                popup_1e891bdc0bc7eb71e75f8029571c209d.setContent(html_43fa8f746378bd1a03e1b2b7341f59e4);
+            
+        
+
+        marker_4746c1409596ee2a50c76e27fa594fba.bindPopup(popup_1e891bdc0bc7eb71e75f8029571c209d)
+        ;
+
+        
+    
+    
+                marker_4746c1409596ee2a50c76e27fa594fba.setIcon(icon_ee9e97b58c221fea2b9e082a174a09d9);
+            
+    
+            var marker_85232ea4641509057c010553fd1c3cbe = L.marker(
+                [30.3719, 76.7767],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_4f8e7080218a07e8cf1ee8ee5466f63a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_904ba28b4a434ca5816b97488ad6b24c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59665e8d4b2b760fc50bd0d1e797a825 = $(`<div id="html_59665e8d4b2b760fc50bd0d1e797a825" style="width: 100.0%; height: 100.0%;">Ambala Air Force Station (India) Type: Air Force</div>`)[0];
+                popup_904ba28b4a434ca5816b97488ad6b24c.setContent(html_59665e8d4b2b760fc50bd0d1e797a825);
+            
+        
+
+        marker_85232ea4641509057c010553fd1c3cbe.bindPopup(popup_904ba28b4a434ca5816b97488ad6b24c)
+        ;
+
+        
+    
+    
+                marker_85232ea4641509057c010553fd1c3cbe.setIcon(icon_4f8e7080218a07e8cf1ee8ee5466f63a);
+            
+    
+            var marker_a89dfb8f74b4d7938b349b27f04158b4 = L.marker(
+                [32.2336, 75.6344],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_0daab81804964ace9a5c2cb2bddcf113 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f009bccc13c3c7716b6432b173129a99 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99a6e112f3bf73a14cbfe94e9f7b8d33 = $(`<div id="html_99a6e112f3bf73a14cbfe94e9f7b8d33" style="width: 100.0%; height: 100.0%;">Pathankot Air Force Station (India) Type: Air Force</div>`)[0];
+                popup_f009bccc13c3c7716b6432b173129a99.setContent(html_99a6e112f3bf73a14cbfe94e9f7b8d33);
+            
+        
+
+        marker_a89dfb8f74b4d7938b349b27f04158b4.bindPopup(popup_f009bccc13c3c7716b6432b173129a99)
+        ;
+
+        
+    
+    
+                marker_a89dfb8f74b4d7938b349b27f04158b4.setIcon(icon_0daab81804964ace9a5c2cb2bddcf113);
+            
+    
+            var marker_988944882544d6df43bf0e98fda47816 = L.marker(
+                [34.1359, 77.5469],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_90fd58e69c07187bdd39fe118beddeae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f96bbc44e4ab94c72a2d8a37d90ffa4e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b4c504af3e49e1d162062f7268e72d4 = $(`<div id="html_7b4c504af3e49e1d162062f7268e72d4" style="width: 100.0%; height: 100.0%;">Leh Airbase (India) Type: Air Force</div>`)[0];
+                popup_f96bbc44e4ab94c72a2d8a37d90ffa4e.setContent(html_7b4c504af3e49e1d162062f7268e72d4);
+            
+        
+
+        marker_988944882544d6df43bf0e98fda47816.bindPopup(popup_f96bbc44e4ab94c72a2d8a37d90ffa4e)
+        ;
+
+        
+    
+    
+                marker_988944882544d6df43bf0e98fda47816.setIcon(icon_90fd58e69c07187bdd39fe118beddeae);
+            
+    
+            var marker_58defdd47f3b5be18deff1691459fac5 = L.marker(
+                [30.7546, 76.8173],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_8a9888df57f884df1ed5c0e58280b40e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_197333a5b6b6699ead1570e512a059bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1cabf75f465748e6b1ff57828b670f7a = $(`<div id="html_1cabf75f465748e6b1ff57828b670f7a" style="width: 100.0%; height: 100.0%;">Chandimandir Cantonment (India) Type: Army</div>`)[0];
+                popup_197333a5b6b6699ead1570e512a059bc.setContent(html_1cabf75f465748e6b1ff57828b670f7a);
+            
+        
+
+        marker_58defdd47f3b5be18deff1691459fac5.bindPopup(popup_197333a5b6b6699ead1570e512a059bc)
+        ;
+
+        
+    
+    
+                marker_58defdd47f3b5be18deff1691459fac5.setIcon(icon_8a9888df57f884df1ed5c0e58280b40e);
+            
+    
+            var marker_8122881bca596a89a9a3067840fd7fdc = L.marker(
+                [26.8914, 70.8723],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_e50983a68c0c56c3d99f4cc0e90278ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4216fbe7d7b4b94584bb588581009103 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68f24d017342c76b97f2dd9003f06151 = $(`<div id="html_68f24d017342c76b97f2dd9003f06151" style="width: 100.0%; height: 100.0%;">Jaisalmer Military Station (India) Type: Army</div>`)[0];
+                popup_4216fbe7d7b4b94584bb588581009103.setContent(html_68f24d017342c76b97f2dd9003f06151);
+            
+        
+
+        marker_8122881bca596a89a9a3067840fd7fdc.bindPopup(popup_4216fbe7d7b4b94584bb588581009103)
+        ;
+
+        
+    
+    
+                marker_8122881bca596a89a9a3067840fd7fdc.setIcon(icon_e50983a68c0c56c3d99f4cc0e90278ee);
+            
+    
+            var marker_bda1094610bf4e9bc74bc30d43f0d59d = L.marker(
+                [15.3762, 73.8325],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_31b5af213e3a1463a78bac06b3fed954 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5398152669191f3375be24aeaee65f62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6cecdd17f5abb8d335e1fc316429c19e = $(`<div id="html_6cecdd17f5abb8d335e1fc316429c19e" style="width: 100.0%; height: 100.0%;">INS Hansa (India) Type: Navy (Air Station)</div>`)[0];
+                popup_5398152669191f3375be24aeaee65f62.setContent(html_6cecdd17f5abb8d335e1fc316429c19e);
+            
+        
+
+        marker_bda1094610bf4e9bc74bc30d43f0d59d.bindPopup(popup_5398152669191f3375be24aeaee65f62)
+        ;
+
+        
+    
+    
+                marker_bda1094610bf4e9bc74bc30d43f0d59d.setIcon(icon_31b5af213e3a1463a78bac06b3fed954);
+            
+    
+            var marker_37496415d6e0e7bc96706142284048af = L.marker(
+                [22.8352, 87.2188],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_5f853316251c74fb6c64f12ec061e135 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_61d536870d9b32e68419b9276610f4a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5949584a9a99663a55153d737d9c6618 = $(`<div id="html_5949584a9a99663a55153d737d9c6618" style="width: 100.0%; height: 100.0%;">Kalaikunda Air Force Station (India) Type: Air Force</div>`)[0];
+                popup_61d536870d9b32e68419b9276610f4a1.setContent(html_5949584a9a99663a55153d737d9c6618);
+            
+        
+
+        marker_37496415d6e0e7bc96706142284048af.bindPopup(popup_61d536870d9b32e68419b9276610f4a1)
+        ;
+
+        
+    
+    
+                marker_37496415d6e0e7bc96706142284048af.setIcon(icon_5f853316251c74fb6c64f12ec061e135);
+            
+    
+            var marker_33c006c57a8420f434ac13711dedd015 = L.marker(
+                [36.9631, 127.0202],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_5703898b06dbe20a65e3c3a1f988678c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_542ba889529ab6348416b45db0cdcdca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ec126e0fe36a83887a516d16719dac2 = $(`<div id="html_4ec126e0fe36a83887a516d16719dac2" style="width: 100.0%; height: 100.0%;">Camp Humphreys (South Korea) Type: Army</div>`)[0];
+                popup_542ba889529ab6348416b45db0cdcdca.setContent(html_4ec126e0fe36a83887a516d16719dac2);
+            
+        
+
+        marker_33c006c57a8420f434ac13711dedd015.bindPopup(popup_542ba889529ab6348416b45db0cdcdca)
+        ;
+
+        
+    
+    
+                marker_33c006c57a8420f434ac13711dedd015.setIcon(icon_5703898b06dbe20a65e3c3a1f988678c);
+            
+    
+            var marker_71a4ab09ec4a72b176af1ed334d2c785 = L.marker(
+                [49.4369, 7.6003],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_a14268fcb8f2ff2e3cfb6b6b4276de26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_306f03adc67f344925bde87d98870086 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4a85103bea5420c944357eeea5483571 = $(`<div id="html_4a85103bea5420c944357eeea5483571" style="width: 100.0%; height: 100.0%;">Ramstein Air Base (Germany) Type: Air Force</div>`)[0];
+                popup_306f03adc67f344925bde87d98870086.setContent(html_4a85103bea5420c944357eeea5483571);
+            
+        
+
+        marker_71a4ab09ec4a72b176af1ed334d2c785.bindPopup(popup_306f03adc67f344925bde87d98870086)
+        ;
+
+        
+    
+    
+                marker_71a4ab09ec4a72b176af1ed334d2c785.setIcon(icon_a14268fcb8f2ff2e3cfb6b6b4276de26);
+            
+    
+            var marker_f99210a0b53f746ce6990a9a53b951d7 = L.marker(
+                [52.4093, 0.5618],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_1815910b4282e6a598469ea9ff57b626 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85572c8482d6c0ce10477d1a07bc0662 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55545003547c4463448d697f5d5c95b2 = $(`<div id="html_55545003547c4463448d697f5d5c95b2" style="width: 100.0%; height: 100.0%;">RAF Lakenheath (UK) Type: Air Force</div>`)[0];
+                popup_85572c8482d6c0ce10477d1a07bc0662.setContent(html_55545003547c4463448d697f5d5c95b2);
+            
+        
+
+        marker_f99210a0b53f746ce6990a9a53b951d7.bindPopup(popup_85572c8482d6c0ce10477d1a07bc0662)
+        ;
+
+        
+    
+    
+                marker_f99210a0b53f746ce6990a9a53b951d7.setIcon(icon_1815910b4282e6a598469ea9ff57b626);
+            
+    
+            var marker_658364d00e32d31ae9f96c9bb306ae85 = L.marker(
+                [36.9467, -76.3303],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_27ec1214bc5f6bdff7820d28a3b0729d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_335f980c90b7c14896d8ffeadec50c40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_10897ae6e09a3ce283b87fc629d65180 = $(`<div id="html_10897ae6e09a3ce283b87fc629d65180" style="width: 100.0%; height: 100.0%;">Naval Station Norfolk (USA) Type: Navy</div>`)[0];
+                popup_335f980c90b7c14896d8ffeadec50c40.setContent(html_10897ae6e09a3ce283b87fc629d65180);
+            
+        
+
+        marker_658364d00e32d31ae9f96c9bb306ae85.bindPopup(popup_335f980c90b7c14896d8ffeadec50c40)
+        ;
+
+        
+    
+    
+                marker_658364d00e32d31ae9f96c9bb306ae85.setIcon(icon_27ec1214bc5f6bdff7820d28a3b0729d);
+            
+    
+            var marker_40c25a009db38c7e8b4c60263fb86561 = L.marker(
+                [35.139, -78.9996],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_2faddbf32096a7ae8db54dd7f8308517 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8b13da93b57a267476b0e7484e37dbc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_81659cabd2e7ea34531782535ed07419 = $(`<div id="html_81659cabd2e7ea34531782535ed07419" style="width: 100.0%; height: 100.0%;">Fort Bragg (USA) Type: Army</div>`)[0];
+                popup_a8b13da93b57a267476b0e7484e37dbc.setContent(html_81659cabd2e7ea34531782535ed07419);
+            
+        
+
+        marker_40c25a009db38c7e8b4c60263fb86561.bindPopup(popup_a8b13da93b57a267476b0e7484e37dbc)
+        ;
+
+        
+    
+    
+                marker_40c25a009db38c7e8b4c60263fb86561.setIcon(icon_2faddbf32096a7ae8db54dd7f8308517);
+            
+    
+            var marker_95e64624ede55d026f70a8f4f40a083a = L.marker(
+                [36.2362, -115.0332],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_8467460bf71368c0156ab3ac38fc534e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7745a80b9665b48bda85ee91eb386d9c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b62298e41491d36194966f1a5e3d55d1 = $(`<div id="html_b62298e41491d36194966f1a5e3d55d1" style="width: 100.0%; height: 100.0%;">Nellis Air Force Base (USA) Type: Air Force</div>`)[0];
+                popup_7745a80b9665b48bda85ee91eb386d9c.setContent(html_b62298e41491d36194966f1a5e3d55d1);
+            
+        
+
+        marker_95e64624ede55d026f70a8f4f40a083a.bindPopup(popup_7745a80b9665b48bda85ee91eb386d9c)
+        ;
+
+        
+    
+    
+                marker_95e64624ede55d026f70a8f4f40a083a.setIcon(icon_8467460bf71368c0156ab3ac38fc534e);
+            
+    
+            var marker_9fb27c5608559722f9f870d65dd7e632 = L.marker(
+                [-7.3133, 72.4114],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_cf1ecbbcce336001bc1dd526a604bd68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf4fae724ac728725676a4bec250eae9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a153d213c3c14bed38fb4fb5f83a810 = $(`<div id="html_1a153d213c3c14bed38fb4fb5f83a810" style="width: 100.0%; height: 100.0%;">Diego Garcia (British Indian Ocean Territory) Type: Navy/Air Force</div>`)[0];
+                popup_cf4fae724ac728725676a4bec250eae9.setContent(html_1a153d213c3c14bed38fb4fb5f83a810);
+            
+        
+
+        marker_9fb27c5608559722f9f870d65dd7e632.bindPopup(popup_cf4fae724ac728725676a4bec250eae9)
+        ;
+
+        
+    
+    
+                marker_9fb27c5608559722f9f870d65dd7e632.setIcon(icon_cf1ecbbcce336001bc1dd526a604bd68);
+            
+    
+            var marker_00ceedc21a9f723ba5b4952aff5b51ce = L.marker(
+                [19.9066, -75.2071],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_b2613d2368835a1a1c18da5ffef7ed85 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f9a6ce65790d58e2fd8a04f26b7c043 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab9ac6e9a0b01424ff6192643df6551b = $(`<div id="html_ab9ac6e9a0b01424ff6192643df6551b" style="width: 100.0%; height: 100.0%;">Guantanamo Bay Naval Base (Cuba) Type: Navy</div>`)[0];
+                popup_1f9a6ce65790d58e2fd8a04f26b7c043.setContent(html_ab9ac6e9a0b01424ff6192643df6551b);
+            
+        
+
+        marker_00ceedc21a9f723ba5b4952aff5b51ce.bindPopup(popup_1f9a6ce65790d58e2fd8a04f26b7c043)
+        ;
+
+        
+    
+    
+                marker_00ceedc21a9f723ba5b4952aff5b51ce.setIcon(icon_b2613d2368835a1a1c18da5ffef7ed85);
+            
+    
+            var marker_3d38d71ef52d96655c5c2b271d75c60b = L.marker(
+                [35.2836, 139.6675],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_174e42ecc5963904f98435bfc3969f8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab2fe7c769a8453c13a4598548870c66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_626d5128bcb03d469f6d095cea3ee227 = $(`<div id="html_626d5128bcb03d469f6d095cea3ee227" style="width: 100.0%; height: 100.0%;">Yokosuka Naval Base (Japan) Type: Navy</div>`)[0];
+                popup_ab2fe7c769a8453c13a4598548870c66.setContent(html_626d5128bcb03d469f6d095cea3ee227);
+            
+        
+
+        marker_3d38d71ef52d96655c5c2b271d75c60b.bindPopup(popup_ab2fe7c769a8453c13a4598548870c66)
+        ;
+
+        
+    
+    
+                marker_3d38d71ef52d96655c5c2b271d75c60b.setIcon(icon_174e42ecc5963904f98435bfc3969f8d);
+            
+    
+            var marker_d137ccf12a367350121f92f6822d4e56 = L.marker(
+                [34.9054, -117.883],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_824d1b47c073b6bda37b3f3242df5fbe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_600329211c9d8eedb4cb697a5f7cc2cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b8829125438b1a3cbf7cf6f5f24f98c = $(`<div id="html_3b8829125438b1a3cbf7cf6f5f24f98c" style="width: 100.0%; height: 100.0%;">Edwards Air Force Base (USA) Type: Air Force</div>`)[0];
+                popup_600329211c9d8eedb4cb697a5f7cc2cf.setContent(html_3b8829125438b1a3cbf7cf6f5f24f98c);
+            
+        
+
+        marker_d137ccf12a367350121f92f6822d4e56.bindPopup(popup_600329211c9d8eedb4cb697a5f7cc2cf)
+        ;
+
+        
+    
+    
+                marker_d137ccf12a367350121f92f6822d4e56.setIcon(icon_824d1b47c073b6bda37b3f3242df5fbe);
+            
+    
+            var marker_d023d0ee55be28c9d144f3d7b3fce31b = L.marker(
+                [40.7032, 141.3677],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_eb1fabfbe66f202423d30a070322478d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf0681869b833948e4147559e07e1136 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62d8d3c3d97fbe2aec46a7d68d158a79 = $(`<div id="html_62d8d3c3d97fbe2aec46a7d68d158a79" style="width: 100.0%; height: 100.0%;">Misawa Air Base (Japan) Type: Air Force</div>`)[0];
+                popup_bf0681869b833948e4147559e07e1136.setContent(html_62d8d3c3d97fbe2aec46a7d68d158a79);
+            
+        
+
+        marker_d023d0ee55be28c9d144f3d7b3fce31b.bindPopup(popup_bf0681869b833948e4147559e07e1136)
+        ;
+
+        
+    
+    
+                marker_d023d0ee55be28c9d144f3d7b3fce31b.setIcon(icon_eb1fabfbe66f202423d30a070322478d);
+            
+    
+            var marker_2ca89e279c978701408a78e5344e86df = L.marker(
+                [47.5591, -122.6367],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_bfc4363898e460e0b7ab836e2c028105 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2211c3660e1e9c40502b71aa6af7071 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b9d47c10c0558782caace1b35a23f1e = $(`<div id="html_7b9d47c10c0558782caace1b35a23f1e" style="width: 100.0%; height: 100.0%;">Naval Base Kitsap (USA) Type: Navy</div>`)[0];
+                popup_e2211c3660e1e9c40502b71aa6af7071.setContent(html_7b9d47c10c0558782caace1b35a23f1e);
+            
+        
+
+        marker_2ca89e279c978701408a78e5344e86df.bindPopup(popup_e2211c3660e1e9c40502b71aa6af7071)
+        ;
+
+        
+    
+    
+                marker_2ca89e279c978701408a78e5344e86df.setIcon(icon_bfc4363898e460e0b7ab836e2c028105);
+            
+    
+            var marker_467b177a0c9de59c0278d59d236ae413 = L.marker(
+                [32.8184, 35.0078],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_ec2610910c248b4e719d2133f75551a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0484c1604e480f4915964158379a444a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_437c72618fd46510d99a7299bc82929c = $(`<div id="html_437c72618fd46510d99a7299bc82929c" style="width: 100.0%; height: 100.0%;">Haifa Naval Base (Israel) Type: Navy</div>`)[0];
+                popup_0484c1604e480f4915964158379a444a.setContent(html_437c72618fd46510d99a7299bc82929c);
+            
+        
+
+        marker_467b177a0c9de59c0278d59d236ae413.bindPopup(popup_0484c1604e480f4915964158379a444a)
+        ;
+
+        
+    
+    
+                marker_467b177a0c9de59c0278d59d236ae413.setIcon(icon_ec2610910c248b4e719d2133f75551a5);
+            
+    
+            var marker_28c0e51b4a1a39d6c2f8c958b5b11cf5 = L.marker(
+                [33.5311, 44.2394],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_f50d1b0b5a90482f5f9eac14d4178389 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1527f5b3def2882729bb25853d3f02ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61d2670c2fc45e6f050859a7474deb8c = $(`<div id="html_61d2670c2fc45e6f050859a7474deb8c" style="width: 100.0%; height: 100.0%;">Taji Military Base (Iraq) Type: Army</div>`)[0];
+                popup_1527f5b3def2882729bb25853d3f02ea.setContent(html_61d2670c2fc45e6f050859a7474deb8c);
+            
+        
+
+        marker_28c0e51b4a1a39d6c2f8c958b5b11cf5.bindPopup(popup_1527f5b3def2882729bb25853d3f02ea)
+        ;
+
+        
+    
+    
+                marker_28c0e51b4a1a39d6c2f8c958b5b11cf5.setIcon(icon_f50d1b0b5a90482f5f9eac14d4178389);
+            
+    
+            var marker_c7b6718327c1d3e7cda0b6b6cfe2e131 = L.marker(
+                [76.5312, -68.7032],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_bb41ef9431ad793de917cf8edcd92179 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73438579fc3a7a451990c6f6daf0c673 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac680ade85cf435da6fa68ecfde16d50 = $(`<div id="html_ac680ade85cf435da6fa68ecfde16d50" style="width: 100.0%; height: 100.0%;">Thule Air Base (Greenland) Type: Air Force</div>`)[0];
+                popup_73438579fc3a7a451990c6f6daf0c673.setContent(html_ac680ade85cf435da6fa68ecfde16d50);
+            
+        
+
+        marker_c7b6718327c1d3e7cda0b6b6cfe2e131.bindPopup(popup_73438579fc3a7a451990c6f6daf0c673)
+        ;
+
+        
+    
+    
+                marker_c7b6718327c1d3e7cda0b6b6cfe2e131.setIcon(icon_bb41ef9431ad793de917cf8edcd92179);
+            
+    
+            var marker_37e0d4757f8e46ff9bd42963be3b961b = L.marker(
+                [48.4158, -101.3608],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_24aa03c250deb2284658883293962496 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8bf8aabd9a95ae9bb6d5681eede3ec0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85ceab9a9b329fcf4475067f252914ba = $(`<div id="html_85ceab9a9b329fcf4475067f252914ba" style="width: 100.0%; height: 100.0%;">Minot Air Force Base (USA) Type: Air Force</div>`)[0];
+                popup_8bf8aabd9a95ae9bb6d5681eede3ec0a.setContent(html_85ceab9a9b329fcf4475067f252914ba);
+            
+        
+
+        marker_37e0d4757f8e46ff9bd42963be3b961b.bindPopup(popup_8bf8aabd9a95ae9bb6d5681eede3ec0a)
+        ;
+
+        
+    
+    
+                marker_37e0d4757f8e46ff9bd42963be3b961b.setIcon(icon_24aa03c250deb2284658883293962496);
+            
+    
+            var marker_f1447e8752d4fbe16c4ce4e1a584207d = L.marker(
+                [21.3456, -157.9509],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_e2bf596f03f6bf0e4cae644de361b489 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e345aa6557b11f34b6b63f93079bfaaa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_360f69ceb3e6dc9a4a088c2315805cd3 = $(`<div id="html_360f69ceb3e6dc9a4a088c2315805cd3" style="width: 100.0%; height: 100.0%;">Pearl Harbor Naval Base (USA) Type: Navy</div>`)[0];
+                popup_e345aa6557b11f34b6b63f93079bfaaa.setContent(html_360f69ceb3e6dc9a4a088c2315805cd3);
+            
+        
+
+        marker_f1447e8752d4fbe16c4ce4e1a584207d.bindPopup(popup_e345aa6557b11f34b6b63f93079bfaaa)
+        ;
+
+        
+    
+    
+                marker_f1447e8752d4fbe16c4ce4e1a584207d.setIcon(icon_e2bf596f03f6bf0e4cae644de361b489);
+            
+    
+            var marker_bd085f49c4aa01a33657f553fce97955 = L.marker(
+                [25.1184, 51.3142],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_8475b2c66cf769069efc875220996156 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ecf5d5b41c98f8279035425f92907477 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c1c6d4555ef4b590045066538703860 = $(`<div id="html_5c1c6d4555ef4b590045066538703860" style="width: 100.0%; height: 100.0%;">Al Udeid Air Base (Qatar) Type: Air Force</div>`)[0];
+                popup_ecf5d5b41c98f8279035425f92907477.setContent(html_5c1c6d4555ef4b590045066538703860);
+            
+        
+
+        marker_bd085f49c4aa01a33657f553fce97955.bindPopup(popup_ecf5d5b41c98f8279035425f92907477)
+        ;
+
+        
+    
+    
+                marker_bd085f49c4aa01a33657f553fce97955.setIcon(icon_8475b2c66cf769069efc875220996156);
+            
+    
+            var marker_8bbd69d19029b5fb0599db4805fee7e0 = L.marker(
+                [32.6852, -117.1417],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_d96262a265071b3995605f31b96439d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_024a532b9b9b94d42ea8263c7e5e9fb6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_afc37039d1f18df6c029d2170153a6a7 = $(`<div id="html_afc37039d1f18df6c029d2170153a6a7" style="width: 100.0%; height: 100.0%;">Naval Base San Diego (USA) Type: Navy</div>`)[0];
+                popup_024a532b9b9b94d42ea8263c7e5e9fb6.setContent(html_afc37039d1f18df6c029d2170153a6a7);
+            
+        
+
+        marker_8bbd69d19029b5fb0599db4805fee7e0.bindPopup(popup_024a532b9b9b94d42ea8263c7e5e9fb6)
+        ;
+
+        
+    
+    
+                marker_8bbd69d19029b5fb0599db4805fee7e0.setIcon(icon_d96262a265071b3995605f31b96439d2);
+            
+    
+            var marker_6445c953a9cb3ff1bb5ae85bbb32c1fd = L.marker(
+                [13.5841, 144.93],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_26b4e9bc1e9c6fb5f0ff2b7076e16d30 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e57b876e9d6ac7d91a6cf97a7289cc5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9773d755f4cb23acf2681648b3265de1 = $(`<div id="html_9773d755f4cb23acf2681648b3265de1" style="width: 100.0%; height: 100.0%;">Andersen Air Force Base (Guam) Type: Air Force</div>`)[0];
+                popup_7e57b876e9d6ac7d91a6cf97a7289cc5.setContent(html_9773d755f4cb23acf2681648b3265de1);
+            
+        
+
+        marker_6445c953a9cb3ff1bb5ae85bbb32c1fd.bindPopup(popup_7e57b876e9d6ac7d91a6cf97a7289cc5)
+        ;
+
+        
+    
+    
+                marker_6445c953a9cb3ff1bb5ae85bbb32c1fd.setIcon(icon_26b4e9bc1e9c6fb5f0ff2b7076e16d30);
+            
+    
+            var marker_68c6835b690a59aa877b8b66f558f911 = L.marker(
+                [18.7717, 73.5093],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_a89c4aa9ee946662b5a27271d51556e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ba8cb3d678237bdc4f94428290194f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be707d7e7c73f4982001d9b732818b50 = $(`<div id="html_be707d7e7c73f4982001d9b732818b50" style="width: 100.0%; height: 100.0%;">INS Shivaji (India) Type: Navy (Training)</div>`)[0];
+                popup_5ba8cb3d678237bdc4f94428290194f8.setContent(html_be707d7e7c73f4982001d9b732818b50);
+            
+        
+
+        marker_68c6835b690a59aa877b8b66f558f911.bindPopup(popup_5ba8cb3d678237bdc4f94428290194f8)
+        ;
+
+        
+    
+    
+                marker_68c6835b690a59aa877b8b66f558f911.setIcon(icon_a89c4aa9ee946662b5a27271d51556e0);
+            
+    
+            var marker_5d940c3a84e0261aa3b1ffe5f4ac798b = L.marker(
+                [9.951, 76.2743],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_08f0550123d45dd47debfdfd816ff55e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe6ff5937ae371e4b0b52e126e05e630 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_955404fef6502fbae26c93d115d2dce3 = $(`<div id="html_955404fef6502fbae26c93d115d2dce3" style="width: 100.0%; height: 100.0%;">INS Garuda (India) Type: Navy (Air Station)</div>`)[0];
+                popup_fe6ff5937ae371e4b0b52e126e05e630.setContent(html_955404fef6502fbae26c93d115d2dce3);
+            
+        
+
+        marker_5d940c3a84e0261aa3b1ffe5f4ac798b.bindPopup(popup_fe6ff5937ae371e4b0b52e126e05e630)
+        ;
+
+        
+    
+    
+                marker_5d940c3a84e0261aa3b1ffe5f4ac798b.setIcon(icon_08f0550123d45dd47debfdfd816ff55e);
+            
+    
+            var marker_66ef9168aff1869cb5b288291c442d8d = L.marker(
+                [26.7094, 92.7848],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_b744044640420d8b47462f8da0de4ca4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c8b52787a16fa1a76fdaa3df16de00c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4644431c5c20b0bf0713a88bccc3b28e = $(`<div id="html_4644431c5c20b0bf0713a88bccc3b28e" style="width: 100.0%; height: 100.0%;">Tezpur Air Force Station (India) Type: Air Force</div>`)[0];
+                popup_5c8b52787a16fa1a76fdaa3df16de00c.setContent(html_4644431c5c20b0bf0713a88bccc3b28e);
+            
+        
+
+        marker_66ef9168aff1869cb5b288291c442d8d.bindPopup(popup_5c8b52787a16fa1a76fdaa3df16de00c)
+        ;
+
+        
+    
+    
+                marker_66ef9168aff1869cb5b288291c442d8d.setIcon(icon_b744044640420d8b47462f8da0de4ca4);
+            
+    
+            var marker_b48342aa2aa65e3c841e3754588263cb = L.marker(
+                [26.2518, 73.0487],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_a006371e09d8a90d7e3eaaa7e789fc41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1364acc157ba1dcac102ae77fc5c10cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13ef571a8f8bafda97ec63ac61d3ec09 = $(`<div id="html_13ef571a8f8bafda97ec63ac61d3ec09" style="width: 100.0%; height: 100.0%;">Jodhpur Air Force Station (India) Type: Air Force</div>`)[0];
+                popup_1364acc157ba1dcac102ae77fc5c10cf.setContent(html_13ef571a8f8bafda97ec63ac61d3ec09);
+            
+        
+
+        marker_b48342aa2aa65e3c841e3754588263cb.bindPopup(popup_1364acc157ba1dcac102ae77fc5c10cf)
+        ;
+
+        
+    
+    
+                marker_b48342aa2aa65e3c841e3754588263cb.setIcon(icon_a006371e09d8a90d7e3eaaa7e789fc41);
+            
+    
+            var marker_4aed175bb380e728cd8c5bd56c69949d = L.marker(
+                [9.9661, 76.2707],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_57eef801299972c414ab8474cfeac708 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb27e708bce85d25661a7b87b1b84523 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4206380da24a670edf3da528995bfba = $(`<div id="html_f4206380da24a670edf3da528995bfba" style="width: 100.0%; height: 100.0%;">INS Venduruthy (India) Type: Navy</div>`)[0];
+                popup_bb27e708bce85d25661a7b87b1b84523.setContent(html_f4206380da24a670edf3da528995bfba);
+            
+        
+
+        marker_4aed175bb380e728cd8c5bd56c69949d.bindPopup(popup_bb27e708bce85d25661a7b87b1b84523)
+        ;
+
+        
+    
+    
+                marker_4aed175bb380e728cd8c5bd56c69949d.setIcon(icon_57eef801299972c414ab8474cfeac708);
+            
+    
+            var marker_ef3c172292284af2c8eec8929df61d4e = L.marker(
+                [6.7516, 93.9106],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_607c0d8ea65016dab4208d574504d373 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05b677ebb1178affeb8219a2579a67f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88987db3bd9a79c8ac2222ca6c8985d5 = $(`<div id="html_88987db3bd9a79c8ac2222ca6c8985d5" style="width: 100.0%; height: 100.0%;">INS Baaz (India) Type: Navy</div>`)[0];
+                popup_05b677ebb1178affeb8219a2579a67f1.setContent(html_88987db3bd9a79c8ac2222ca6c8985d5);
+            
+        
+
+        marker_ef3c172292284af2c8eec8929df61d4e.bindPopup(popup_05b677ebb1178affeb8219a2579a67f1)
+        ;
+
+        
+    
+    
+                marker_ef3c172292284af2c8eec8929df61d4e.setIcon(icon_607c0d8ea65016dab4208d574504d373);
+            
+    
+            var marker_1060716b20f7def6332b2724b6bedc11 = L.marker(
+                [11.3626, 76.7862],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_71cfe06e247afdfa0d92d39cd430fc7a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05b51482a50728fda1ae88b8bf3d0dae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e2a6f0cb2c1931a4697ed2c76968cc8 = $(`<div id="html_2e2a6f0cb2c1931a4697ed2c76968cc8" style="width: 100.0%; height: 100.0%;">Wellington Cantonment (India) Type: Army (Training)</div>`)[0];
+                popup_05b51482a50728fda1ae88b8bf3d0dae.setContent(html_2e2a6f0cb2c1931a4697ed2c76968cc8);
+            
+        
+
+        marker_1060716b20f7def6332b2724b6bedc11.bindPopup(popup_05b51482a50728fda1ae88b8bf3d0dae)
+        ;
+
+        
+    
+    
+                marker_1060716b20f7def6332b2724b6bedc11.setIcon(icon_71cfe06e247afdfa0d92d39cd430fc7a);
+            
+    
+            var marker_39747a0794bf5c0c924bd9dfd1655594 = L.marker(
+                [25.2426, 78.474],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_de5902115ee681ad2701dc8fb0bf5453 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3da64b6618ff4ad139c246fc58f32a7c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd69a69c84650fee3bfab9cbeeefa3d3 = $(`<div id="html_cd69a69c84650fee3bfab9cbeeefa3d3" style="width: 100.0%; height: 100.0%;">Babina Cantonment (India) Type: Army (Armoured Corps)</div>`)[0];
+                popup_3da64b6618ff4ad139c246fc58f32a7c.setContent(html_cd69a69c84650fee3bfab9cbeeefa3d3);
+            
+        
+
+        marker_39747a0794bf5c0c924bd9dfd1655594.bindPopup(popup_3da64b6618ff4ad139c246fc58f32a7c)
+        ;
+
+        
+    
+    
+                marker_39747a0794bf5c0c924bd9dfd1655594.setIcon(icon_de5902115ee681ad2701dc8fb0bf5453);
+            
+    
+            var marker_179cedcf11eb3b95444790b1e90350e4 = L.marker(
+                [19.7555, 85.3736],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_9e2dbc2cd95cc480774fb1d6f40db851 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b80b4fc6072e8ea681f4c5c4dfdeaa5e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6667a53ef7274c39f5cf211da667ba66 = $(`<div id="html_6667a53ef7274c39f5cf211da667ba66" style="width: 100.0%; height: 100.0%;">INS Chilka (India) Type: Navy (Recruit Training)</div>`)[0];
+                popup_b80b4fc6072e8ea681f4c5c4dfdeaa5e.setContent(html_6667a53ef7274c39f5cf211da667ba66);
+            
+        
+
+        marker_179cedcf11eb3b95444790b1e90350e4.bindPopup(popup_b80b4fc6072e8ea681f4c5c4dfdeaa5e)
+        ;
+
+        
+    
+    
+                marker_179cedcf11eb3b95444790b1e90350e4.setIcon(icon_9e2dbc2cd95cc480774fb1d6f40db851);
+            
+    
+            var marker_4c2f04d536df64eb58b69c1e0f6145ca = L.marker(
+                [26.2933, 78.2271],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_ab896f9bdbc01d2f6229aad397c13cce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6043b16663bb2864c8654912658ad37 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_404fb9b27f28f24619b0c0d1465c2ecd = $(`<div id="html_404fb9b27f28f24619b0c0d1465c2ecd" style="width: 100.0%; height: 100.0%;">Gwalior Air Force Station (India) Type: Air Force</div>`)[0];
+                popup_e6043b16663bb2864c8654912658ad37.setContent(html_404fb9b27f28f24619b0c0d1465c2ecd);
+            
+        
+
+        marker_4c2f04d536df64eb58b69c1e0f6145ca.bindPopup(popup_e6043b16663bb2864c8654912658ad37)
+        ;
+
+        
+    
+    
+                marker_4c2f04d536df64eb58b69c1e0f6145ca.setIcon(icon_ab896f9bdbc01d2f6229aad397c13cce);
+            
+    
+            var marker_d4bcf684387e0c0020758a54de15c1e5 = L.marker(
+                [34.9461, 69.264],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_d3ad0229cd7c3d2dd184e7d2339b1ea6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91a7885131c327fef348a010688a8a02 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf8659876f59f421608a334935f217e4 = $(`<div id="html_bf8659876f59f421608a334935f217e4" style="width: 100.0%; height: 100.0%;">Bagram Air Base (Afghanistan) Type: Air Force</div>`)[0];
+                popup_91a7885131c327fef348a010688a8a02.setContent(html_bf8659876f59f421608a334935f217e4);
+            
+        
+
+        marker_d4bcf684387e0c0020758a54de15c1e5.bindPopup(popup_91a7885131c327fef348a010688a8a02)
+        ;
+
+        
+    
+    
+                marker_d4bcf684387e0c0020758a54de15c1e5.setIcon(icon_d3ad0229cd7c3d2dd184e7d2339b1ea6);
+            
+    
+            var marker_525a58845df7e9d8aeff32545df13ced = L.marker(
+                [26.3544, 127.7652],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_753aaefc6de5d9dbdac75536f9dd16ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3bfa7ae1d8688c87827cd5e69de83f36 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b218fe7281707eea52f1bd0420adb264 = $(`<div id="html_b218fe7281707eea52f1bd0420adb264" style="width: 100.0%; height: 100.0%;">Kadena Air Base (Japan) Type: Air Force</div>`)[0];
+                popup_3bfa7ae1d8688c87827cd5e69de83f36.setContent(html_b218fe7281707eea52f1bd0420adb264);
+            
+        
+
+        marker_525a58845df7e9d8aeff32545df13ced.bindPopup(popup_3bfa7ae1d8688c87827cd5e69de83f36)
+        ;
+
+        
+    
+    
+                marker_525a58845df7e9d8aeff32545df13ced.setIcon(icon_753aaefc6de5d9dbdac75536f9dd16ea);
+            
+    
+            var marker_461d559de7c23d5b61b2174a3f3dc6bb = L.marker(
+                [64.6657, -147.1022],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_ecc1cb8c5d138446dde976036c8cae0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7179c521bd20847441b242cbca48c918 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75b1c711b33c1132ffbf8fa11a93942d = $(`<div id="html_75b1c711b33c1132ffbf8fa11a93942d" style="width: 100.0%; height: 100.0%;">Eielson Air Force Base (USA) Type: Air Force</div>`)[0];
+                popup_7179c521bd20847441b242cbca48c918.setContent(html_75b1c711b33c1132ffbf8fa11a93942d);
+            
+        
+
+        marker_461d559de7c23d5b61b2174a3f3dc6bb.bindPopup(popup_7179c521bd20847441b242cbca48c918)
+        ;
+
+        
+    
+    
+                marker_461d559de7c23d5b61b2174a3f3dc6bb.setIcon(icon_ecc1cb8c5d138446dde976036c8cae0b);
+            
+    
+            var marker_0d6c0d00e36c5b4116e83c0d171df740 = L.marker(
+                [31.1349, -97.779],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_f2b03f8e862df7a488ef76ab77f25f2f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c353dff72a624e21e7f2a38a0c93e5f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fc9da03ccc36c75cdf35e59b9611b0d = $(`<div id="html_5fc9da03ccc36c75cdf35e59b9611b0d" style="width: 100.0%; height: 100.0%;">Fort Hood (USA) Type: Army</div>`)[0];
+                popup_c353dff72a624e21e7f2a38a0c93e5f7.setContent(html_5fc9da03ccc36c75cdf35e59b9611b0d);
+            
+        
+
+        marker_0d6c0d00e36c5b4116e83c0d171df740.bindPopup(popup_c353dff72a624e21e7f2a38a0c93e5f7)
+        ;
+
+        
+    
+    
+                marker_0d6c0d00e36c5b4116e83c0d171df740.setIcon(icon_f2b03f8e862df7a488ef76ab77f25f2f);
+            
+    
+            var marker_450d02cc2bc4abb8e21cea86109d88a1 = L.marker(
+                [48.3501, -122.6589],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_a5b07aa60993bbcd8611fdb27a5f429b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1b8774570536d4b23f2d993ab9d7eab5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f67bff05cc8998f365451be765076b6 = $(`<div id="html_6f67bff05cc8998f365451be765076b6" style="width: 100.0%; height: 100.0%;">Naval Air Station Whidbey Island (USA) Type: Navy</div>`)[0];
+                popup_1b8774570536d4b23f2d993ab9d7eab5.setContent(html_6f67bff05cc8998f365451be765076b6);
+            
+        
+
+        marker_450d02cc2bc4abb8e21cea86109d88a1.bindPopup(popup_1b8774570536d4b23f2d993ab9d7eab5)
+        ;
+
+        
+    
+    
+                marker_450d02cc2bc4abb8e21cea86109d88a1.setIcon(icon_a5b07aa60993bbcd8611fdb27a5f429b);
+            
+    
+            var marker_65ed9dab9992f6bf86436b42e0f05205 = L.marker(
+                [13.4457, 144.6565],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_56cb4df255261473d79b2785366d1253 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae0be32a06c3fbba57ed9e8c437a4fc6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c397da4132018a7e7fbe96e1965d9871 = $(`<div id="html_c397da4132018a7e7fbe96e1965d9871" style="width: 100.0%; height: 100.0%;">Naval Base Guam (Guam) Type: Navy</div>`)[0];
+                popup_ae0be32a06c3fbba57ed9e8c437a4fc6.setContent(html_c397da4132018a7e7fbe96e1965d9871);
+            
+        
+
+        marker_65ed9dab9992f6bf86436b42e0f05205.bindPopup(popup_ae0be32a06c3fbba57ed9e8c437a4fc6)
+        ;
+
+        
+    
+    
+                marker_65ed9dab9992f6bf86436b42e0f05205.setIcon(icon_56cb4df255261473d79b2785366d1253);
+            
+    
+            var marker_ce6a04d9ce340e73b1dca45c49b3d308 = L.marker(
+                [35.4146, -97.3866],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_a694c207261c0f12dad598835b7b1043 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c4a1ab7d2d414dce1bb31fbbdb4e494 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f02b217790b5842dfa93985ff08254e = $(`<div id="html_4f02b217790b5842dfa93985ff08254e" style="width: 100.0%; height: 100.0%;">Tinker Air Force Base (USA) Type: Air Force</div>`)[0];
+                popup_4c4a1ab7d2d414dce1bb31fbbdb4e494.setContent(html_4f02b217790b5842dfa93985ff08254e);
+            
+        
+
+        marker_ce6a04d9ce340e73b1dca45c49b3d308.bindPopup(popup_4c4a1ab7d2d414dce1bb31fbbdb4e494)
+        ;
+
+        
+    
+    
+                marker_ce6a04d9ce340e73b1dca45c49b3d308.setIcon(icon_a694c207261c0f12dad598835b7b1043);
+            
+    
+            var marker_a8600e72e4d918286b02cce6e734313b = L.marker(
+                [36.6195, -6.3506],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_1085af0d425ae98ff11ea6108debb386 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e37c25aa276ffc55b279f0838f987ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03d0a92b149e0b242f414077aea6ad93 = $(`<div id="html_03d0a92b149e0b242f414077aea6ad93" style="width: 100.0%; height: 100.0%;">Naval Station Rota (Spain) Type: Navy</div>`)[0];
+                popup_7e37c25aa276ffc55b279f0838f987ab.setContent(html_03d0a92b149e0b242f414077aea6ad93);
+            
+        
+
+        marker_a8600e72e4d918286b02cce6e734313b.bindPopup(popup_7e37c25aa276ffc55b279f0838f987ab)
+        ;
+
+        
+    
+    
+                marker_a8600e72e4d918286b02cce6e734313b.setIcon(icon_1085af0d425ae98ff11ea6108debb386);
+            
+    
+            var marker_b90bcb46f88707f6a79a44f472f02750 = L.marker(
+                [21.3246, -157.9243],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_569f891b1aca02f227b7d5a9901e59e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e72adeebaf6c3d24d3314c077be5f34 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7796c234cfdbd654e660af7cacdf8fa9 = $(`<div id="html_7796c234cfdbd654e660af7cacdf8fa9" style="width: 100.0%; height: 100.0%;">Hickam Air Force Base (USA) Type: Air Force</div>`)[0];
+                popup_1e72adeebaf6c3d24d3314c077be5f34.setContent(html_7796c234cfdbd654e660af7cacdf8fa9);
+            
+        
+
+        marker_b90bcb46f88707f6a79a44f472f02750.bindPopup(popup_1e72adeebaf6c3d24d3314c077be5f34)
+        ;
+
+        
+    
+    
+                marker_b90bcb46f88707f6a79a44f472f02750.setIcon(icon_569f891b1aca02f227b7d5a9901e59e9);
+            
+    
+            var marker_079fc1cb93074bd79303a157e1cdcf2a = L.marker(
+                [37.0904, 127.0294],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_62a5d46b7675952b0df31f2d271f0b59 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bbeb3999951c8bcba3b28942244dc537 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_894a8bf9923e92109c83aa67e466d242 = $(`<div id="html_894a8bf9923e92109c83aa67e466d242" style="width: 100.0%; height: 100.0%;">Osan Air Base (South Korea) Type: Air Force</div>`)[0];
+                popup_bbeb3999951c8bcba3b28942244dc537.setContent(html_894a8bf9923e92109c83aa67e466d242);
+            
+        
+
+        marker_079fc1cb93074bd79303a157e1cdcf2a.bindPopup(popup_bbeb3999951c8bcba3b28942244dc537)
+        ;
+
+        
+    
+    
+                marker_079fc1cb93074bd79303a157e1cdcf2a.setIcon(icon_62a5d46b7675952b0df31f2d271f0b59);
+            
+    
+            var marker_f08d66113c4a29e8719ca0b4645b1a01 = L.marker(
+                [32.3637, -84.9493],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_b949607968e64ad2323dbec721f51b1b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44bbb7929a490c8df875033c23c7c209 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f870c7769fc252886b8ef62bea773c88 = $(`<div id="html_f870c7769fc252886b8ef62bea773c88" style="width: 100.0%; height: 100.0%;">Fort Benning (USA) Type: Army</div>`)[0];
+                popup_44bbb7929a490c8df875033c23c7c209.setContent(html_f870c7769fc252886b8ef62bea773c88);
+            
+        
+
+        marker_f08d66113c4a29e8719ca0b4645b1a01.bindPopup(popup_44bbb7929a490c8df875033c23c7c209)
+        ;
+
+        
+    
+    
+                marker_f08d66113c4a29e8719ca0b4645b1a01.setIcon(icon_b949607968e64ad2323dbec721f51b1b);
+            
+    
+            var marker_a1c3f06a8f5280f0410204f1e3836e7d = L.marker(
+                [37.4075, 14.9228],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_e6268e83818bb9a6da485763ce10a4fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ffde1a52f7ddb1246416ad49eaf90edf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b0703ff5f1584b7b89e0dd932c4f352d = $(`<div id="html_b0703ff5f1584b7b89e0dd932c4f352d" style="width: 100.0%; height: 100.0%;">Naval Air Station Sigonella (Italy) Type: Navy</div>`)[0];
+                popup_ffde1a52f7ddb1246416ad49eaf90edf.setContent(html_b0703ff5f1584b7b89e0dd932c4f352d);
+            
+        
+
+        marker_a1c3f06a8f5280f0410204f1e3836e7d.bindPopup(popup_ffde1a52f7ddb1246416ad49eaf90edf)
+        ;
+
+        
+    
+    
+                marker_a1c3f06a8f5280f0410204f1e3836e7d.setIcon(icon_e6268e83818bb9a6da485763ce10a4fd);
+            
+    
+            var marker_fceb00d42eb769a7542707b7326685cf = L.marker(
+                [24.2486, 54.5475],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_e12cea512074e12b215aa0a8dcb0deb2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0c6847dc87062304c4ffee958cf9343 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d871e019ff6cdf183a9ca4cae09d14fa = $(`<div id="html_d871e019ff6cdf183a9ca4cae09d14fa" style="width: 100.0%; height: 100.0%;">Al Dhafra Air Base (UAE) Type: Air Force</div>`)[0];
+                popup_f0c6847dc87062304c4ffee958cf9343.setContent(html_d871e019ff6cdf183a9ca4cae09d14fa);
+            
+        
+
+        marker_fceb00d42eb769a7542707b7326685cf.bindPopup(popup_f0c6847dc87062304c4ffee958cf9343)
+        ;
+
+        
+    
+    
+                marker_fceb00d42eb769a7542707b7326685cf.setIcon(icon_e12cea512074e12b215aa0a8dcb0deb2);
+            
+    
+            var marker_a908f17a5653eb714f476ad671c8f150 = L.marker(
+                [11.5475, 43.1596],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_57066da92e23752131d8848761d84ace = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c1c9147f81b77b0e578e60adb101f5bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4d0d31dfa61b917f92a545fd843d6b7 = $(`<div id="html_d4d0d31dfa61b917f92a545fd843d6b7" style="width: 100.0%; height: 100.0%;">Camp Lemonnier (Djibouti) Type: Navy</div>`)[0];
+                popup_c1c9147f81b77b0e578e60adb101f5bb.setContent(html_d4d0d31dfa61b917f92a545fd843d6b7);
+            
+        
+
+        marker_a908f17a5653eb714f476ad671c8f150.bindPopup(popup_c1c9147f81b77b0e578e60adb101f5bb)
+        ;
+
+        
+    
+    
+                marker_a908f17a5653eb714f476ad671c8f150.setIcon(icon_57066da92e23752131d8848761d84ace);
+            
+    
+            var marker_2ed6e1cf68d4e13038ce2e2f3e650f10 = L.marker(
+                [51.6823, -1.7901],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_69e673ffd55c17e34199e4d5b07d394d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f578b9295532092f3665a785c20b8fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f97cca0f326cedabf957aee8be93074 = $(`<div id="html_4f97cca0f326cedabf957aee8be93074" style="width: 100.0%; height: 100.0%;">Raf Fairford (UK) Type: Air Force</div>`)[0];
+                popup_3f578b9295532092f3665a785c20b8fc.setContent(html_4f97cca0f326cedabf957aee8be93074);
+            
+        
+
+        marker_2ed6e1cf68d4e13038ce2e2f3e650f10.bindPopup(popup_3f578b9295532092f3665a785c20b8fc)
+        ;
+
+        
+    
+    
+                marker_2ed6e1cf68d4e13038ce2e2f3e650f10.setIcon(icon_69e673ffd55c17e34199e4d5b07d394d);
+            
+    
+            var marker_373009701995a28c636c3956eb6fc0f6 = L.marker(
+                [37.0017, 35.4258],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_4968d52b4c83f5188462c133de5625f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a3408cd1982a0ad4f485c98fe9952e30 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccc2abd3bcef0e4b423718c645339dfa = $(`<div id="html_ccc2abd3bcef0e4b423718c645339dfa" style="width: 100.0%; height: 100.0%;">Incirlik Air Base (Turkey) Type: Air Force</div>`)[0];
+                popup_a3408cd1982a0ad4f485c98fe9952e30.setContent(html_ccc2abd3bcef0e4b423718c645339dfa);
+            
+        
+
+        marker_373009701995a28c636c3956eb6fc0f6.bindPopup(popup_a3408cd1982a0ad4f485c98fe9952e30)
+        ;
+
+        
+    
+    
+                marker_373009701995a28c636c3956eb6fc0f6.setIcon(icon_4968d52b4c83f5188462c133de5625f4);
+            
+    
+            var marker_7a3f268e7d9c0df617069602df8f02f8 = L.marker(
+                [1.4503, 103.8188],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_1ef72ff03b0840f684ef4c88e6f6ba3d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2c6fd467a56eada4f312f737b80eb899 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3bcd95b38fe4e7d003e4bfd01971dd94 = $(`<div id="html_3bcd95b38fe4e7d003e4bfd01971dd94" style="width: 100.0%; height: 100.0%;">Sembawang Naval Base (Singapore) Type: Navy</div>`)[0];
+                popup_2c6fd467a56eada4f312f737b80eb899.setContent(html_3bcd95b38fe4e7d003e4bfd01971dd94);
+            
+        
+
+        marker_7a3f268e7d9c0df617069602df8f02f8.bindPopup(popup_2c6fd467a56eada4f312f737b80eb899)
+        ;
+
+        
+    
+    
+                marker_7a3f268e7d9c0df617069602df8f02f8.setIcon(icon_1ef72ff03b0840f684ef4c88e6f6ba3d);
+            
+    
+            var marker_50b4d16ddfe755722a236bb3c2efb4d1 = L.marker(
+                [1.3604, 103.9103],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_a183378182440e37e2e1882b0f29c6b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d2c385d226e652caf344ac2bd6b9412f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_754434d7cf9b67c12530e156a81fc0b1 = $(`<div id="html_754434d7cf9b67c12530e156a81fc0b1" style="width: 100.0%; height: 100.0%;">Paya Lebar Air Base (Singapore) Type: Air Force</div>`)[0];
+                popup_d2c385d226e652caf344ac2bd6b9412f.setContent(html_754434d7cf9b67c12530e156a81fc0b1);
+            
+        
+
+        marker_50b4d16ddfe755722a236bb3c2efb4d1.bindPopup(popup_d2c385d226e652caf344ac2bd6b9412f)
+        ;
+
+        
+    
+    
+                marker_50b4d16ddfe755722a236bb3c2efb4d1.setIcon(icon_a183378182440e37e2e1882b0f29c6b1);
+            
+    
+            var marker_ec4939e3cd59cb9d8e907388db10cd6c = L.marker(
+                [36.6677, -87.4604],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_a4697c5f83b835860b43247076477dff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8dbeda809b2532bbb4ef1448d9c699c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3632c69eb16c9da68c0e5273d6d04556 = $(`<div id="html_3632c69eb16c9da68c0e5273d6d04556" style="width: 100.0%; height: 100.0%;">Fort Campbell (USA) Type: Army</div>`)[0];
+                popup_d8dbeda809b2532bbb4ef1448d9c699c.setContent(html_3632c69eb16c9da68c0e5273d6d04556);
+            
+        
+
+        marker_ec4939e3cd59cb9d8e907388db10cd6c.bindPopup(popup_d8dbeda809b2532bbb4ef1448d9c699c)
+        ;
+
+        
+    
+    
+                marker_ec4939e3cd59cb9d8e907388db10cd6c.setIcon(icon_a4697c5f83b835860b43247076477dff);
+            
+    
+            var marker_e81362a3745bf573df5827c38f8c8227 = L.marker(
+                [56.0746, -4.8222],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_96bceb4e656a67e165a378e055fcb0de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7cd2e37d06f0a7b87cd5e3705718f652 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cdd35816b864f334580f828935a7ec22 = $(`<div id="html_cdd35816b864f334580f828935a7ec22" style="width: 100.0%; height: 100.0%;">Naval Base Clyde (UK) Type: Navy</div>`)[0];
+                popup_7cd2e37d06f0a7b87cd5e3705718f652.setContent(html_cdd35816b864f334580f828935a7ec22);
+            
+        
+
+        marker_e81362a3745bf573df5827c38f8c8227.bindPopup(popup_7cd2e37d06f0a7b87cd5e3705718f652)
+        ;
+
+        
+    
+    
+                marker_e81362a3745bf573df5827c38f8c8227.setIcon(icon_96bceb4e656a67e165a378e055fcb0de);
+            
+    
+            var marker_926be4cb0c67e326861ec2c3f469551a = L.marker(
+                [54.7104, 20.5073],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_b2a683566db7afc2c460ad7d88babea2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b0f9eb366e1edb8448f4444f3e451ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_575153cc2fce9a988842746a5f41860c = $(`<div id="html_575153cc2fce9a988842746a5f41860c" style="width: 100.0%; height: 100.0%;">Baltic Fleet HQ (Kaliningrad) (Russia) Type: Navy</div>`)[0];
+                popup_9b0f9eb366e1edb8448f4444f3e451ca.setContent(html_575153cc2fce9a988842746a5f41860c);
+            
+        
+
+        marker_926be4cb0c67e326861ec2c3f469551a.bindPopup(popup_9b0f9eb366e1edb8448f4444f3e451ca)
+        ;
+
+        
+    
+    
+                marker_926be4cb0c67e326861ec2c3f469551a.setIcon(icon_b2a683566db7afc2c460ad7d88babea2);
+            
+    
+            var marker_a8ba68a12cd69c0cf70f39840606ed83 = L.marker(
+                [69.0766, 33.4176],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_e34653dff91f0dfa47d18ab0c196fb77 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ce829410b764de0ef038cd7d57f83c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be3f6a589c7a6d1cb043c58a903467ae = $(`<div id="html_be3f6a589c7a6d1cb043c58a903467ae" style="width: 100.0%; height: 100.0%;">Severomorsk Naval Base (Russia) Type: Navy</div>`)[0];
+                popup_5ce829410b764de0ef038cd7d57f83c9.setContent(html_be3f6a589c7a6d1cb043c58a903467ae);
+            
+        
+
+        marker_a8ba68a12cd69c0cf70f39840606ed83.bindPopup(popup_5ce829410b764de0ef038cd7d57f83c9)
+        ;
+
+        
+    
+    
+                marker_a8ba68a12cd69c0cf70f39840606ed83.setIcon(icon_e34653dff91f0dfa47d18ab0c196fb77);
+            
+    
+            var marker_a851da663a6fa0be6d5ef14025397ca1 = L.marker(
+                [43.1155, 131.8855],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_7a7e6c807de6b54ac2c2eac5c423a793 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e29b3026806fd445090eca3ac86e9fbb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92851259853f3e84c4d6ce0c14801cb2 = $(`<div id="html_92851259853f3e84c4d6ce0c14801cb2" style="width: 100.0%; height: 100.0%;">Vladivostok Naval Base (Russia) Type: Navy</div>`)[0];
+                popup_e29b3026806fd445090eca3ac86e9fbb.setContent(html_92851259853f3e84c4d6ce0c14801cb2);
+            
+        
+
+        marker_a851da663a6fa0be6d5ef14025397ca1.bindPopup(popup_e29b3026806fd445090eca3ac86e9fbb)
+        ;
+
+        
+    
+    
+                marker_a851da663a6fa0be6d5ef14025397ca1.setIcon(icon_7a7e6c807de6b54ac2c2eac5c423a793);
+            
+    
+            var marker_e737c21716fafbb77153bd4f52dd2f4c = L.marker(
+                [51.4794, 46.2119],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_0d24a5bcc5351fdce59a23bafffeea46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd9ac6d8aa1f14d249e9e529d80ff040 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12ebb7939bbdfbcfdc026340dc6b57da = $(`<div id="html_12ebb7939bbdfbcfdc026340dc6b57da" style="width: 100.0%; height: 100.0%;">Engels Air Force Base (Russia) Type: Air Force (Strategic Bombers)</div>`)[0];
+                popup_fd9ac6d8aa1f14d249e9e529d80ff040.setContent(html_12ebb7939bbdfbcfdc026340dc6b57da);
+            
+        
+
+        marker_e737c21716fafbb77153bd4f52dd2f4c.bindPopup(popup_fd9ac6d8aa1f14d249e9e529d80ff040)
+        ;
+
+        
+    
+    
+                marker_e737c21716fafbb77153bd4f52dd2f4c.setIcon(icon_0d24a5bcc5351fdce59a23bafffeea46);
+            
+    
+            var marker_3a39a34169fe9fa413e13fda3cf2e190 = L.marker(
+                [51.75, 36.3],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_9350481f457bcde0b348f5bf667ff8b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28e7af623596c992d2951e2d4d574274 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc913bb6de4ce8f0826e75ac7c180069 = $(`<div id="html_bc913bb6de4ce8f0826e75ac7c180069" style="width: 100.0%; height: 100.0%;">Kursk Air Base (Russia) Type: Air Force</div>`)[0];
+                popup_28e7af623596c992d2951e2d4d574274.setContent(html_bc913bb6de4ce8f0826e75ac7c180069);
+            
+        
+
+        marker_3a39a34169fe9fa413e13fda3cf2e190.bindPopup(popup_28e7af623596c992d2951e2d4d574274)
+        ;
+
+        
+    
+    
+                marker_3a39a34169fe9fa413e13fda3cf2e190.setIcon(icon_9350481f457bcde0b348f5bf667ff8b7);
+            
+    
+            var marker_a02b074275836c1ba29e2b3a53bad6d1 = L.marker(
+                [55.3051, 61.5036],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_6907a52b6c39e3609f33e7bc654fb24f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11fc89e936bf7a6a5884205e33f23fd8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1775dacd79c167dbbc766ba1afb637b = $(`<div id="html_f1775dacd79c167dbbc766ba1afb637b" style="width: 100.0%; height: 100.0%;">Chelyabinsk Shagol Air Base (Russia) Type: Air Force</div>`)[0];
+                popup_11fc89e936bf7a6a5884205e33f23fd8.setContent(html_f1775dacd79c167dbbc766ba1afb637b);
+            
+        
+
+        marker_a02b074275836c1ba29e2b3a53bad6d1.bindPopup(popup_11fc89e936bf7a6a5884205e33f23fd8)
+        ;
+
+        
+    
+    
+                marker_a02b074275836c1ba29e2b3a53bad6d1.setIcon(icon_6907a52b6c39e3609f33e7bc654fb24f);
+            
+    
+            var marker_867ba7a486f068108589eec3742e3fbc = L.marker(
+                [48.523, 135.1851],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_f8c8294eb5a599d7a69dc638acab4fea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a3db2d397ff7a966cabc3d63892e69d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e538a3b5fa3b0e78e4487114abba164b = $(`<div id="html_e538a3b5fa3b0e78e4487114abba164b" style="width: 100.0%; height: 100.0%;">Khabarovsk Air Base (Russia) Type: Air Force</div>`)[0];
+                popup_6a3db2d397ff7a966cabc3d63892e69d.setContent(html_e538a3b5fa3b0e78e4487114abba164b);
+            
+        
+
+        marker_867ba7a486f068108589eec3742e3fbc.bindPopup(popup_6a3db2d397ff7a966cabc3d63892e69d)
+        ;
+
+        
+    
+    
+                marker_867ba7a486f068108589eec3742e3fbc.setIcon(icon_f8c8294eb5a599d7a69dc638acab4fea);
+            
+    
+            var marker_9499715ab6c7380fbb93725f538852fc = L.marker(
+                [47.1981, 38.8498],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_531a60b3166ac0ba1299e5b5ecf6fbd9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b862ab9ad8625c393d35d7fbf43122e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_943763eb70bd39a9e8f225bd59085973 = $(`<div id="html_943763eb70bd39a9e8f225bd59085973" style="width: 100.0%; height: 100.0%;">Taganrog Air Base (Russia) Type: Air Force</div>`)[0];
+                popup_b862ab9ad8625c393d35d7fbf43122e9.setContent(html_943763eb70bd39a9e8f225bd59085973);
+            
+        
+
+        marker_9499715ab6c7380fbb93725f538852fc.bindPopup(popup_b862ab9ad8625c393d35d7fbf43122e9)
+        ;
+
+        
+    
+    
+                marker_9499715ab6c7380fbb93725f538852fc.setIcon(icon_531a60b3166ac0ba1299e5b5ecf6fbd9);
+            
+    
+            var marker_ed6e60af44d5f61e7d8b9709a9a513dc = L.marker(
+                [48.3167, 40.25],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_2fce19ceb341b1df1623d3d5469a5ee0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d16bff4d65565f72ec8f09c7c1be0f2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6287d47f1d0a7ecc372ee45d3ffb4eab = $(`<div id="html_6287d47f1d0a7ecc372ee45d3ffb4eab" style="width: 100.0%; height: 100.0%;">Kamensk-Shakhtinsky Base (Russia) Type: Army</div>`)[0];
+                popup_d16bff4d65565f72ec8f09c7c1be0f2f.setContent(html_6287d47f1d0a7ecc372ee45d3ffb4eab);
+            
+        
+
+        marker_ed6e60af44d5f61e7d8b9709a9a513dc.bindPopup(popup_d16bff4d65565f72ec8f09c7c1be0f2f)
+        ;
+
+        
+    
+    
+                marker_ed6e60af44d5f61e7d8b9709a9a513dc.setIcon(icon_2fce19ceb341b1df1623d3d5469a5ee0);
+            
+    
+            var marker_9472886ab8a458d45f5c493175debf1e = L.marker(
+                [43.7445, 44.6594],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_e8a89b9e9bd1565b4b3af10c94333dfd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a20f9f0dfb688bdd0cfd376fbdb8f278 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd7de31604ee987ddd153064c19c76ca = $(`<div id="html_bd7de31604ee987ddd153064c19c76ca" style="width: 100.0%; height: 100.0%;">Mozdok Air Base (Russia) Type: Air Force</div>`)[0];
+                popup_a20f9f0dfb688bdd0cfd376fbdb8f278.setContent(html_bd7de31604ee987ddd153064c19c76ca);
+            
+        
+
+        marker_9472886ab8a458d45f5c493175debf1e.bindPopup(popup_a20f9f0dfb688bdd0cfd376fbdb8f278)
+        ;
+
+        
+    
+    
+                marker_9472886ab8a458d45f5c493175debf1e.setIcon(icon_e8a89b9e9bd1565b4b3af10c94333dfd);
+            
+    
+            var marker_549e4d4832e2c132f2f94cf972895fe7 = L.marker(
+                [35.4077, 116.5878],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_5619e6aa2d0e87cb1fd284c5cf4ed18c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_754924a9aeb116b40c77034b65de9e03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7c882a9123bf6f608407c99384abb70 = $(`<div id="html_b7c882a9123bf6f608407c99384abb70" style="width: 100.0%; height: 100.0%;">Jining Air Base (China) Type: Air Force</div>`)[0];
+                popup_754924a9aeb116b40c77034b65de9e03.setContent(html_b7c882a9123bf6f608407c99384abb70);
+            
+        
+
+        marker_549e4d4832e2c132f2f94cf972895fe7.bindPopup(popup_754924a9aeb116b40c77034b65de9e03)
+        ;
+
+        
+    
+    
+                marker_549e4d4832e2c132f2f94cf972895fe7.setIcon(icon_5619e6aa2d0e87cb1fd284c5cf4ed18c);
+            
+    
+            var marker_1ad44d21a9813038278d1b24991f2161 = L.marker(
+                [29.3, 90.9167],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_1ed9afca393de67866fbf8d811c116c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4614f3c709a2517335f36da392d22a14 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_91d96dc3ac61999dc9d97aafded5ce62 = $(`<div id="html_91d96dc3ac61999dc9d97aafded5ce62" style="width: 100.0%; height: 100.0%;">Lhasa Gonggar Air Base (China) Type: Air Force</div>`)[0];
+                popup_4614f3c709a2517335f36da392d22a14.setContent(html_91d96dc3ac61999dc9d97aafded5ce62);
+            
+        
+
+        marker_1ad44d21a9813038278d1b24991f2161.bindPopup(popup_4614f3c709a2517335f36da392d22a14)
+        ;
+
+        
+    
+    
+                marker_1ad44d21a9813038278d1b24991f2161.setIcon(icon_1ed9afca393de67866fbf8d811c116c6);
+            
+    
+            var marker_e32b5cce1f4923a22a774d25b849a20b = L.marker(
+                [37.0381, 79.8649],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_008544ed65dac09ad5f6680b93ab6bd1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae787adf70bf63960e24c1db183ea413 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_003618d5dc4c7be7011a5c8ae1965472 = $(`<div id="html_003618d5dc4c7be7011a5c8ae1965472" style="width: 100.0%; height: 100.0%;">Hotan Air Base (China) Type: Air Force</div>`)[0];
+                popup_ae787adf70bf63960e24c1db183ea413.setContent(html_003618d5dc4c7be7011a5c8ae1965472);
+            
+        
+
+        marker_e32b5cce1f4923a22a774d25b849a20b.bindPopup(popup_ae787adf70bf63960e24c1db183ea413)
+        ;
+
+        
+    
+    
+                marker_e32b5cce1f4923a22a774d25b849a20b.setIcon(icon_008544ed65dac09ad5f6680b93ab6bd1);
+            
+    
+            var marker_67f0486d3918a95c3e4060d92d8b6ca4 = L.marker(
+                [40.7872, 114.8889],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_12203e5820a028770219465a99be5649 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_94603739a3767cf415a04d39a57f0c01 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6518a5126d80e72ca00032b232ad45e2 = $(`<div id="html_6518a5126d80e72ca00032b232ad45e2" style="width: 100.0%; height: 100.0%;">Zhangjiakou Air Base (China) Type: Air Force</div>`)[0];
+                popup_94603739a3767cf415a04d39a57f0c01.setContent(html_6518a5126d80e72ca00032b232ad45e2);
+            
+        
+
+        marker_67f0486d3918a95c3e4060d92d8b6ca4.bindPopup(popup_94603739a3767cf415a04d39a57f0c01)
+        ;
+
+        
+    
+    
+                marker_67f0486d3918a95c3e4060d92d8b6ca4.setIcon(icon_12203e5820a028770219465a99be5649);
+            
+    
+            var marker_faa4bbed22d969e9f22bfda467a099a6 = L.marker(
+                [41.799, 123.4315],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_5899ea462be614c10f2a7bc35ab959e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b97a592cea29162afafd3f3195fbfd1c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1bb61c71756466bedecfd11a1e6250c8 = $(`<div id="html_1bb61c71756466bedecfd11a1e6250c8" style="width: 100.0%; height: 100.0%;">Shenyang Northern Theater Command (China) Type: Joint Command</div>`)[0];
+                popup_b97a592cea29162afafd3f3195fbfd1c.setContent(html_1bb61c71756466bedecfd11a1e6250c8);
+            
+        
+
+        marker_faa4bbed22d969e9f22bfda467a099a6.bindPopup(popup_b97a592cea29162afafd3f3195fbfd1c)
+        ;
+
+        
+    
+    
+                marker_faa4bbed22d969e9f22bfda467a099a6.setIcon(icon_5899ea462be614c10f2a7bc35ab959e7);
+            
+    
+            var marker_80241f67623eb1760835725167f96d5d = L.marker(
+                [18.2127, 109.7283],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_a6ddfb51a76881608f7cf1fc7b0d560c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e3f0bccdec1182b415465687c26d35e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f165064c2115232384263da4d30b599d = $(`<div id="html_f165064c2115232384263da4d30b599d" style="width: 100.0%; height: 100.0%;">Yulin Naval Base (China) Type: Navy (Submarine)</div>`)[0];
+                popup_3e3f0bccdec1182b415465687c26d35e.setContent(html_f165064c2115232384263da4d30b599d);
+            
+        
+
+        marker_80241f67623eb1760835725167f96d5d.bindPopup(popup_3e3f0bccdec1182b415465687c26d35e)
+        ;
+
+        
+    
+    
+                marker_80241f67623eb1760835725167f96d5d.setIcon(icon_a6ddfb51a76881608f7cf1fc7b0d560c);
+            
+    
+            var marker_1b6cd5eaa7a4bfff4b0676f3a59193a8 = L.marker(
+                [18.234, 109.503],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_d38d889f4436275dcfd7f548c9b130d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2d39f1687d76b42775dffb86dd4c836 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e26a9e6b30a1c970d0fe5fed46a819c = $(`<div id="html_3e26a9e6b30a1c970d0fe5fed46a819c" style="width: 100.0%; height: 100.0%;">Sanya Naval Base (China) Type: Navy</div>`)[0];
+                popup_b2d39f1687d76b42775dffb86dd4c836.setContent(html_3e26a9e6b30a1c970d0fe5fed46a819c);
+            
+        
+
+        marker_1b6cd5eaa7a4bfff4b0676f3a59193a8.bindPopup(popup_b2d39f1687d76b42775dffb86dd4c836)
+        ;
+
+        
+    
+    
+                marker_1b6cd5eaa7a4bfff4b0676f3a59193a8.setIcon(icon_d38d889f4436275dcfd7f548c9b130d2);
+            
+    
+            var marker_0a2ee3a67b17a45f42d842b2c4d2df56 = L.marker(
+                [22.8167, 108.3667],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_ac09d0abd0e38f42869a47691abcd99b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09c96cac0fea401720cce74b5c69b2b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48745f9a589902f41b76c24e66fd3863 = $(`<div id="html_48745f9a589902f41b76c24e66fd3863" style="width: 100.0%; height: 100.0%;">Nanning Military Base (China) Type: Army</div>`)[0];
+                popup_09c96cac0fea401720cce74b5c69b2b0.setContent(html_48745f9a589902f41b76c24e66fd3863);
+            
+        
+
+        marker_0a2ee3a67b17a45f42d842b2c4d2df56.bindPopup(popup_09c96cac0fea401720cce74b5c69b2b0)
+        ;
+
+        
+    
+    
+                marker_0a2ee3a67b17a45f42d842b2c4d2df56.setIcon(icon_ac09d0abd0e38f42869a47691abcd99b);
+            
+    
+            var marker_4a7e2f4058d00018cc51d17da9536925 = L.marker(
+                [30.671, 104.0665],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_0bb9f64b34f0d9c767343fd00ad7ac03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ded9175f961848cd30c7869c9448284 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be40532e5ea720ea49eb881b04914d4e = $(`<div id="html_be40532e5ea720ea49eb881b04914d4e" style="width: 100.0%; height: 100.0%;">Chengdu Military Region HQ (China) Type: Joint Command</div>`)[0];
+                popup_0ded9175f961848cd30c7869c9448284.setContent(html_be40532e5ea720ea49eb881b04914d4e);
+            
+        
+
+        marker_4a7e2f4058d00018cc51d17da9536925.bindPopup(popup_0ded9175f961848cd30c7869c9448284)
+        ;
+
+        
+    
+    
+                marker_4a7e2f4058d00018cc51d17da9536925.setIcon(icon_0bb9f64b34f0d9c767343fd00ad7ac03);
+            
+    
+            var marker_c6dd9f73382e3015005d27c253c6f476 = L.marker(
+                [31.3433, 118.433],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_06c5397e6822f934ad0089135057e655 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_756ce7a3bc5c40d6d86a02fbe4cf8fc8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b08354f19d01bd8e812236a399a7812a = $(`<div id="html_b08354f19d01bd8e812236a399a7812a" style="width: 100.0%; height: 100.0%;">Wuhu Air Base (China) Type: Air Force</div>`)[0];
+                popup_756ce7a3bc5c40d6d86a02fbe4cf8fc8.setContent(html_b08354f19d01bd8e812236a399a7812a);
+            
+        
+
+        marker_c6dd9f73382e3015005d27c253c6f476.bindPopup(popup_756ce7a3bc5c40d6d86a02fbe4cf8fc8)
+        ;
+
+        
+    
+    
+                marker_c6dd9f73382e3015005d27c253c6f476.setIcon(icon_06c5397e6822f934ad0089135057e655);
+            
+    
+            var marker_febaabfc0be35f06fe35310b73cc4346 = L.marker(
+                [42.3869, 21.2704],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_2421039b8f872fb193a2d3cbdbf08bbb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ddcc9c5086db1c98e0ad9dedd7a61e77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd11eaadb55011f067c944a3d0380e45 = $(`<div id="html_bd11eaadb55011f067c944a3d0380e45" style="width: 100.0%; height: 100.0%;">Camp Bondsteel (Kosovo) Type: Army</div>`)[0];
+                popup_ddcc9c5086db1c98e0ad9dedd7a61e77.setContent(html_bd11eaadb55011f067c944a3d0380e45);
+            
+        
+
+        marker_febaabfc0be35f06fe35310b73cc4346.bindPopup(popup_ddcc9c5086db1c98e0ad9dedd7a61e77)
+        ;
+
+        
+    
+    
+                marker_febaabfc0be35f06fe35310b73cc4346.setIcon(icon_2421039b8f872fb193a2d3cbdbf08bbb);
+            
+    
+            var marker_668e337e94a3988f6a3ba28b18e599a3 = L.marker(
+                [46.0319, 12.5965],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_79022b8e84ab56937de7a63af949da83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6faccc75e75339c753ca71f998d2bdd4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74c1e877f2f8bddc78389e92a8a26c5e = $(`<div id="html_74c1e877f2f8bddc78389e92a8a26c5e" style="width: 100.0%; height: 100.0%;">Aviano Air Base (Italy) Type: Air Force</div>`)[0];
+                popup_6faccc75e75339c753ca71f998d2bdd4.setContent(html_74c1e877f2f8bddc78389e92a8a26c5e);
+            
+        
+
+        marker_668e337e94a3988f6a3ba28b18e599a3.bindPopup(popup_6faccc75e75339c753ca71f998d2bdd4)
+        ;
+
+        
+    
+    
+                marker_668e337e94a3988f6a3ba28b18e599a3.setIcon(icon_79022b8e84ab56937de7a63af949da83);
+            
+    
+            var marker_b51e4090df3d71615b37a480a4ff4548 = L.marker(
+                [43.1189, 5.9306],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_c780195507a1c200c66f14bba27e0fa5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99d313e065a3865da0958ac49a3cc70f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7cb9883a22f858d2d71a5343e70ba23b = $(`<div id="html_7cb9883a22f858d2d71a5343e70ba23b" style="width: 100.0%; height: 100.0%;">Naval Station Toulon (France) Type: Navy</div>`)[0];
+                popup_99d313e065a3865da0958ac49a3cc70f.setContent(html_7cb9883a22f858d2d71a5343e70ba23b);
+            
+        
+
+        marker_b51e4090df3d71615b37a480a4ff4548.bindPopup(popup_99d313e065a3865da0958ac49a3cc70f)
+        ;
+
+        
+    
+    
+                marker_b51e4090df3d71615b37a480a4ff4548.setIcon(icon_c780195507a1c200c66f14bba27e0fa5);
+            
+    
+            var marker_189c674a9f50c2a0c6d0c0f9ce9b69a9 = L.marker(
+                [50.1742, 7.0556],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_29bb873ab70446d0da8c7c34a2b3ee7a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf5463d2c42ea20ebd6259a5066077c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9d8da636ad82aa41fc1c1094bdf2b5f = $(`<div id="html_d9d8da636ad82aa41fc1c1094bdf2b5f" style="width: 100.0%; height: 100.0%;">Luftwaffe Air Base Büchel (Germany) Type: Air Force (Nuclear-capable)</div>`)[0];
+                popup_cf5463d2c42ea20ebd6259a5066077c3.setContent(html_d9d8da636ad82aa41fc1c1094bdf2b5f);
+            
+        
+
+        marker_189c674a9f50c2a0c6d0c0f9ce9b69a9.bindPopup(popup_cf5463d2c42ea20ebd6259a5066077c3)
+        ;
+
+        
+    
+    
+                marker_189c674a9f50c2a0c6d0c0f9ce9b69a9.setIcon(icon_29bb873ab70446d0da8c7c34a2b3ee7a);
+            
+    
+            var marker_46d7352da5568c83441bb08451d15d8d = L.marker(
+                [43.8253, 18.3317],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_7a6a6d40cbc647e75a96430d9ee6e05e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_50cf743ebe1bf4abc11296cef81b59f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dbfdd0ae0143f8b549f76f6034014fd4 = $(`<div id="html_dbfdd0ae0143f8b549f76f6034014fd4" style="width: 100.0%; height: 100.0%;">Camp Butmir (Bosnia and Herzegovina) Type: NATO</div>`)[0];
+                popup_50cf743ebe1bf4abc11296cef81b59f7.setContent(html_dbfdd0ae0143f8b549f76f6034014fd4);
+            
+        
+
+        marker_46d7352da5568c83441bb08451d15d8d.bindPopup(popup_50cf743ebe1bf4abc11296cef81b59f7)
+        ;
+
+        
+    
+    
+                marker_46d7352da5568c83441bb08451d15d8d.setIcon(icon_7a6a6d40cbc647e75a96430d9ee6e05e);
+            
+    
+            var marker_9db69213cdc363c7f948af7afb7ca83a = L.marker(
+                [55.2251, 9.2646],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_8ad5e9d143cfdcf0435337c061fbaca2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7704e0b96c60fac087daf6530961a69 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f77fbefec95a09d0aa20d9c381360b4b = $(`<div id="html_f77fbefec95a09d0aa20d9c381360b4b" style="width: 100.0%; height: 100.0%;">Skrydstrup Air Base (Denmark) Type: Air Force</div>`)[0];
+                popup_b7704e0b96c60fac087daf6530961a69.setContent(html_f77fbefec95a09d0aa20d9c381360b4b);
+            
+        
+
+        marker_9db69213cdc363c7f948af7afb7ca83a.bindPopup(popup_b7704e0b96c60fac087daf6530961a69)
+        ;
+
+        
+    
+    
+                marker_9db69213cdc363c7f948af7afb7ca83a.setIcon(icon_8ad5e9d143cfdcf0435337c061fbaca2);
+            
+    
+            var marker_309b8993f6410268b470773d2f8ea95f = L.marker(
+                [36.6195, -6.3506],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_9b1203e9f842b41887e387d0b466e843 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2fd785931a00ef9271416192f3c51c75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_91083a7abf5ca086759cd9208527f8c0 = $(`<div id="html_91083a7abf5ca086759cd9208527f8c0" style="width: 100.0%; height: 100.0%;">Naval Base Rota (Spain) Type: Navy (Joint US/Spain)</div>`)[0];
+                popup_2fd785931a00ef9271416192f3c51c75.setContent(html_91083a7abf5ca086759cd9208527f8c0);
+            
+        
+
+        marker_309b8993f6410268b470773d2f8ea95f.bindPopup(popup_2fd785931a00ef9271416192f3c51c75)
+        ;
+
+        
+    
+    
+                marker_309b8993f6410268b470773d2f8ea95f.setIcon(icon_9b1203e9f842b41887e387d0b466e843);
+            
+    
+            var marker_9582bbe8191a64ed62018df586b8964c = L.marker(
+                [37.002, -2.0355],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_74411d739e53b5d5f5cec43e15197059 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ee02e4776b31b168e68c923a4a007f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b0ddd44f0126ef86add3b516c8b0676f = $(`<div id="html_b0ddd44f0126ef86add3b516c8b0676f" style="width: 100.0%; height: 100.0%;">Álvarez de Sotomayor Base (Spain) Type: Army</div>`)[0];
+                popup_0ee02e4776b31b168e68c923a4a007f9.setContent(html_b0ddd44f0126ef86add3b516c8b0676f);
+            
+        
+
+        marker_9582bbe8191a64ed62018df586b8964c.bindPopup(popup_0ee02e4776b31b168e68c923a4a007f9)
+        ;
+
+        
+    
+    
+                marker_9582bbe8191a64ed62018df586b8964c.setIcon(icon_74411d739e53b5d5f5cec43e15197059);
+            
+    
+            var marker_1d189f573718517349f0a2f8ab371a7e = L.marker(
+                [46.9172, 19.7481],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_e0057e1cb2e092dcb96778e4b0cf099a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8459556250772bb2ac16825a2f657e82 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc8a5e237dcdbbffa4cdabc0be5d9caa = $(`<div id="html_dc8a5e237dcdbbffa4cdabc0be5d9caa" style="width: 100.0%; height: 100.0%;">Kecskemét Air Base (Hungary) Type: Air Force</div>`)[0];
+                popup_8459556250772bb2ac16825a2f657e82.setContent(html_dc8a5e237dcdbbffa4cdabc0be5d9caa);
+            
+        
+
+        marker_1d189f573718517349f0a2f8ab371a7e.bindPopup(popup_8459556250772bb2ac16825a2f657e82)
+        ;
+
+        
+    
+    
+                marker_1d189f573718517349f0a2f8ab371a7e.setIcon(icon_e0057e1cb2e092dcb96778e4b0cf099a);
+            
+    
+            var marker_b9dc863c84d963d9a49238d65f1c59e6 = L.marker(
+                [42.2922, 24.7144],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_287d88d60d2873646de2a0c6e9e7a91e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2e5e808122c06ce7fba47e94e89e8ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_150cf504109559fc7030633ed216c924 = $(`<div id="html_150cf504109559fc7030633ed216c924" style="width: 100.0%; height: 100.0%;">Graf Ignatievo Air Base (Bulgaria) Type: Air Force</div>`)[0];
+                popup_e2e5e808122c06ce7fba47e94e89e8ab.setContent(html_150cf504109559fc7030633ed216c924);
+            
+        
+
+        marker_b9dc863c84d963d9a49238d65f1c59e6.bindPopup(popup_e2e5e808122c06ce7fba47e94e89e8ab)
+        ;
+
+        
+    
+    
+                marker_b9dc863c84d963d9a49238d65f1c59e6.setIcon(icon_287d88d60d2873646de2a0c6e9e7a91e);
+            
+    
+            var marker_e45ccd44b3b3c7089323bcd268b9f92d = L.marker(
+                [-27.637, 152.712],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_ccd31298a21e5818fb9da239602d577e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aebcfd6a0c153e7a3efd662c2ff6f2a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd6a38ab53fb51cf7fd1964ab6c9d71f = $(`<div id="html_cd6a38ab53fb51cf7fd1964ab6c9d71f" style="width: 100.0%; height: 100.0%;">RAAF Base Amberley (Australia) Type: Air Force</div>`)[0];
+                popup_aebcfd6a0c153e7a3efd662c2ff6f2a9.setContent(html_cd6a38ab53fb51cf7fd1964ab6c9d71f);
+            
+        
+
+        marker_e45ccd44b3b3c7089323bcd268b9f92d.bindPopup(popup_aebcfd6a0c153e7a3efd662c2ff6f2a9)
+        ;
+
+        
+    
+    
+                marker_e45ccd44b3b3c7089323bcd268b9f92d.setIcon(icon_ccd31298a21e5818fb9da239602d577e);
+            
+    
+            var marker_237b28fef1bc2c5bf4bf684a8254226b = L.marker(
+                [-32.226, 115.6867],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_4a8ac1e4a805cd24a0709bef6a7da8fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e260618e36989042170d2a15777d991 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8e0337918998fb3735f3de552265e14 = $(`<div id="html_b8e0337918998fb3735f3de552265e14" style="width: 100.0%; height: 100.0%;">HMAS Stirling (Australia) Type: Navy</div>`)[0];
+                popup_6e260618e36989042170d2a15777d991.setContent(html_b8e0337918998fb3735f3de552265e14);
+            
+        
+
+        marker_237b28fef1bc2c5bf4bf684a8254226b.bindPopup(popup_6e260618e36989042170d2a15777d991)
+        ;
+
+        
+    
+    
+                marker_237b28fef1bc2c5bf4bf684a8254226b.setIcon(icon_4a8ac1e4a805cd24a0709bef6a7da8fc);
+            
+    
+            var marker_73775e43af98804789df28534c9a8f7d = L.marker(
+                [-12.4003, 130.9263],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_c3fdf1f976d803e398b16e1dd6c8ead0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2fa9fb184c5e9b7b4354c45f67fe58ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dbe4c083092114afe65cec3e58a56c89 = $(`<div id="html_dbe4c083092114afe65cec3e58a56c89" style="width: 100.0%; height: 100.0%;">Robertson Barracks (Australia) Type: Army</div>`)[0];
+                popup_2fa9fb184c5e9b7b4354c45f67fe58ce.setContent(html_dbe4c083092114afe65cec3e58a56c89);
+            
+        
+
+        marker_73775e43af98804789df28534c9a8f7d.bindPopup(popup_2fa9fb184c5e9b7b4354c45f67fe58ce)
+        ;
+
+        
+    
+    
+                marker_73775e43af98804789df28534c9a8f7d.setIcon(icon_c3fdf1f976d803e398b16e1dd6c8ead0);
+            
+    
+            var marker_e652591a6b39d85e3de10a85ade9430c = L.marker(
+                [-14.5126, 132.3788],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_b1a0a3803a866654481f9b92b1f38e32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ef6f4462015f9466c1558f19d246428 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3976e34a6ff672d76a51d461bb3ec6f6 = $(`<div id="html_3976e34a6ff672d76a51d461bb3ec6f6" style="width: 100.0%; height: 100.0%;">RAAF Base Tindal (Australia) Type: Air Force</div>`)[0];
+                popup_6ef6f4462015f9466c1558f19d246428.setContent(html_3976e34a6ff672d76a51d461bb3ec6f6);
+            
+        
+
+        marker_e652591a6b39d85e3de10a85ade9430c.bindPopup(popup_6ef6f4462015f9466c1558f19d246428)
+        ;
+
+        
+    
+    
+                marker_e652591a6b39d85e3de10a85ade9430c.setIcon(icon_b1a0a3803a866654481f9b92b1f38e32);
+            
+    
+            var marker_acd5fbb0e2d743a5171dd3b86387b0ec = L.marker(
+                [-12.4071, 130.8775],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_06431770dc79d5cb9ac5739d04e37036 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_499e7cd13c2af88dfe4bf43fc26304af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72e058b782f45d0389468277647791ef = $(`<div id="html_72e058b782f45d0389468277647791ef" style="width: 100.0%; height: 100.0%;">RAAF Base Darwin (Australia) Type: Air Force</div>`)[0];
+                popup_499e7cd13c2af88dfe4bf43fc26304af.setContent(html_72e058b782f45d0389468277647791ef);
+            
+        
+
+        marker_acd5fbb0e2d743a5171dd3b86387b0ec.bindPopup(popup_499e7cd13c2af88dfe4bf43fc26304af)
+        ;
+
+        
+    
+    
+                marker_acd5fbb0e2d743a5171dd3b86387b0ec.setIcon(icon_06431770dc79d5cb9ac5739d04e37036);
+            
+    
+            var marker_880e59a8baca309648996de3e829010d = L.marker(
+                [-34.7005, 138.6224],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_75622e040c249da1af802dca6d74e08a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_161d5eb73f4565b786e1aa36dc4a8105 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6fafb33b5a2aaad69e18a0737295c3cf = $(`<div id="html_6fafb33b5a2aaad69e18a0737295c3cf" style="width: 100.0%; height: 100.0%;">RAAF Base Edinburgh (Australia) Type: Air Force</div>`)[0];
+                popup_161d5eb73f4565b786e1aa36dc4a8105.setContent(html_6fafb33b5a2aaad69e18a0737295c3cf);
+            
+        
+
+        marker_880e59a8baca309648996de3e829010d.bindPopup(popup_161d5eb73f4565b786e1aa36dc4a8105)
+        ;
+
+        
+    
+    
+                marker_880e59a8baca309648996de3e829010d.setIcon(icon_75622e040c249da1af802dca6d74e08a);
+            
+    
+            var marker_dbb086d98eebad95a473ebfcd4baf5ab = L.marker(
+                [36.9631, 127.0202],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_8e584f0ca300bc6c7f46da6dc175449e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76808ebfc6c3ef61c9e9461c94ae5d04 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3afd413b75ab84da1ecb2f3721ad2e4 = $(`<div id="html_d3afd413b75ab84da1ecb2f3721ad2e4" style="width: 100.0%; height: 100.0%;">Camp Humphreys (South Korea) Type: Army</div>`)[0];
+                popup_76808ebfc6c3ef61c9e9461c94ae5d04.setContent(html_d3afd413b75ab84da1ecb2f3721ad2e4);
+            
+        
+
+        marker_dbb086d98eebad95a473ebfcd4baf5ab.bindPopup(popup_76808ebfc6c3ef61c9e9461c94ae5d04)
+        ;
+
+        
+    
+    
+                marker_dbb086d98eebad95a473ebfcd4baf5ab.setIcon(icon_8e584f0ca300bc6c7f46da6dc175449e);
+            
+    
+            var marker_cd721461e6f0c20e124a7d7949051696 = L.marker(
+                [36.0321, 129.3651],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_399915409091d126eb93fc35cbc356a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d421dd30b6468d4454f58eebd469ce2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04ef17dc8fe966f38c4b6ce44cca647e = $(`<div id="html_04ef17dc8fe966f38c4b6ce44cca647e" style="width: 100.0%; height: 100.0%;">Pohang Naval Base (South Korea) Type: Navy</div>`)[0];
+                popup_7d421dd30b6468d4454f58eebd469ce2.setContent(html_04ef17dc8fe966f38c4b6ce44cca647e);
+            
+        
+
+        marker_cd721461e6f0c20e124a7d7949051696.bindPopup(popup_7d421dd30b6468d4454f58eebd469ce2)
+        ;
+
+        
+    
+    
+                marker_cd721461e6f0c20e124a7d7949051696.setIcon(icon_399915409091d126eb93fc35cbc356a4);
+            
+    
+            var marker_88a292d0357d9ac22e4090e6cc020c07 = L.marker(
+                [39.15, 127.45],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_f028410410912d0f0af62dd855dc620a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_22cd67924c32b5e01c08aac617119bf3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27b20cbb0696b3d6802878e00a93da1a = $(`<div id="html_27b20cbb0696b3d6802878e00a93da1a" style="width: 100.0%; height: 100.0%;">Wonsan Naval Base (North Korea) Type: Navy</div>`)[0];
+                popup_22cd67924c32b5e01c08aac617119bf3.setContent(html_27b20cbb0696b3d6802878e00a93da1a);
+            
+        
+
+        marker_88a292d0357d9ac22e4090e6cc020c07.bindPopup(popup_22cd67924c32b5e01c08aac617119bf3)
+        ;
+
+        
+    
+    
+                marker_88a292d0357d9ac22e4090e6cc020c07.setIcon(icon_f028410410912d0f0af62dd855dc620a);
+            
+    
+            var marker_c1960e70f39f251ce2d13ada1bbba8ae = L.marker(
+                [39.917, 127.533],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_6f62f912c1757bcc7542821c6e1f9cae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5415fdf8ba62b9a8f1de81be9112cec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cece178fff72f6dde39b9a8740600fc4 = $(`<div id="html_cece178fff72f6dde39b9a8740600fc4" style="width: 100.0%; height: 100.0%;">Hamhung Military Complex (North Korea) Type: Army</div>`)[0];
+                popup_e5415fdf8ba62b9a8f1de81be9112cec.setContent(html_cece178fff72f6dde39b9a8740600fc4);
+            
+        
+
+        marker_c1960e70f39f251ce2d13ada1bbba8ae.bindPopup(popup_e5415fdf8ba62b9a8f1de81be9112cec)
+        ;
+
+        
+    
+    
+                marker_c1960e70f39f251ce2d13ada1bbba8ae.setIcon(icon_6f62f912c1757bcc7542821c6e1f9cae);
+            
+    
+            var marker_2c3766e4f228ff438e134c6208039038 = L.marker(
+                [40.1, 124.4],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_2f93ecb0541bd14a04a27d3fa1a4d333 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ac79084c97fcad394ff6b5099d79440 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e91e4ac356cefbc04ec18b10c19b50a = $(`<div id="html_3e91e4ac356cefbc04ec18b10c19b50a" style="width: 100.0%; height: 100.0%;">Sinuiju Airfield (North Korea) Type: Air Force</div>`)[0];
+                popup_5ac79084c97fcad394ff6b5099d79440.setContent(html_3e91e4ac356cefbc04ec18b10c19b50a);
+            
+        
+
+        marker_2c3766e4f228ff438e134c6208039038.bindPopup(popup_5ac79084c97fcad394ff6b5099d79440)
+        ;
+
+        
+    
+    
+                marker_2c3766e4f228ff438e134c6208039038.setIcon(icon_2f93ecb0541bd14a04a27d3fa1a4d333);
+            
+    
+            var marker_1d87a1eba137efe12ba796cc64fc359e = L.marker(
+                [-25.8306, 28.2225],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_5c7fc57e17cf684fdd157ee5fe50cb03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_683d0ec12f3ec58e781382c51cca1129 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d089aa064fb6ba55bbbf41538426275 = $(`<div id="html_4d089aa064fb6ba55bbbf41538426275" style="width: 100.0%; height: 100.0%;">AFB Waterkloof (South Africa) Type: Air Force</div>`)[0];
+                popup_683d0ec12f3ec58e781382c51cca1129.setContent(html_4d089aa064fb6ba55bbbf41538426275);
+            
+        
+
+        marker_1d87a1eba137efe12ba796cc64fc359e.bindPopup(popup_683d0ec12f3ec58e781382c51cca1129)
+        ;
+
+        
+    
+    
+                marker_1d87a1eba137efe12ba796cc64fc359e.setIcon(icon_5c7fc57e17cf684fdd157ee5fe50cb03);
+            
+    
+            var marker_3c02e4d0b9c7c738f4709bfc4247f4ab = L.marker(
+                [-28.483, 23.6469],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_4179ecdad6415f773581b2265046421d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1dd31252201b993a75b4a7ebde78cf55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9729f7eab47a0582899ba7efb4273ace = $(`<div id="html_9729f7eab47a0582899ba7efb4273ace" style="width: 100.0%; height: 100.0%;">Lohatla Military Training Area (South Africa) Type: Army</div>`)[0];
+                popup_1dd31252201b993a75b4a7ebde78cf55.setContent(html_9729f7eab47a0582899ba7efb4273ace);
+            
+        
+
+        marker_3c02e4d0b9c7c738f4709bfc4247f4ab.bindPopup(popup_1dd31252201b993a75b4a7ebde78cf55)
+        ;
+
+        
+    
+    
+                marker_3c02e4d0b9c7c738f4709bfc4247f4ab.setIcon(icon_4179ecdad6415f773581b2265046421d);
+            
+    
+            var marker_cd60b724bc5c2e8911061afc029a63ee = L.marker(
+                [-34.1889, 18.4331],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_34ba38191541a0a9fa1110665d64a826 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_245ab72bbbf4accbed3f3f576b8dd589 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d16b1389cf5c5123b7806d748a79fb1 = $(`<div id="html_7d16b1389cf5c5123b7806d748a79fb1" style="width: 100.0%; height: 100.0%;">Simon’s Town Naval Base (South Africa) Type: Navy</div>`)[0];
+                popup_245ab72bbbf4accbed3f3f576b8dd589.setContent(html_7d16b1389cf5c5123b7806d748a79fb1);
+            
+        
+
+        marker_cd60b724bc5c2e8911061afc029a63ee.bindPopup(popup_245ab72bbbf4accbed3f3f576b8dd589)
+        ;
+
+        
+    
+    
+                marker_cd60b724bc5c2e8911061afc029a63ee.setIcon(icon_34ba38191541a0a9fa1110665d64a826);
+            
+    
+            var marker_ad34fc85924533ca7df356cab4cc89f5 = L.marker(
+                [-19.5667, 18.1167],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_c594a7cb033aefdb58540ab9219e7cd6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fcdb0850461fce64ed0b8090106d323a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc9b8ea09df0c78f02c776fe0a086173 = $(`<div id="html_bc9b8ea09df0c78f02c776fe0a086173" style="width: 100.0%; height: 100.0%;">Grootfontein Air Base (Namibia) Type: Air Force</div>`)[0];
+                popup_fcdb0850461fce64ed0b8090106d323a.setContent(html_bc9b8ea09df0c78f02c776fe0a086173);
+            
+        
+
+        marker_ad34fc85924533ca7df356cab4cc89f5.bindPopup(popup_fcdb0850461fce64ed0b8090106d323a)
+        ;
+
+        
+    
+    
+                marker_ad34fc85924533ca7df356cab4cc89f5.setIcon(icon_c594a7cb033aefdb58540ab9219e7cd6);
+            
+    
+            var marker_487ec63fbf6097f8e934267473ac3755 = L.marker(
+                [12.5333, -7.95],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_99903a37ce4969d99f57883470d19381 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c63cf4a86b2f4740606c46939eb221f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0d63d9492a064f871009275f140ea56 = $(`<div id="html_d0d63d9492a064f871009275f140ea56" style="width: 100.0%; height: 100.0%;">Bamako Air Base (Mali) Type: Air Force</div>`)[0];
+                popup_4c63cf4a86b2f4740606c46939eb221f.setContent(html_d0d63d9492a064f871009275f140ea56);
+            
+        
+
+        marker_487ec63fbf6097f8e934267473ac3755.bindPopup(popup_4c63cf4a86b2f4740606c46939eb221f)
+        ;
+
+        
+    
+    
+                marker_487ec63fbf6097f8e934267473ac3755.setIcon(icon_99903a37ce4969d99f57883470d19381);
+            
+    
+            var marker_f791e3b3cb8a13a44af8a5d58f2ce8d4 = L.marker(
+                [11.5475, 43.1596],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_babc5d92e145e707d09cf6bb161cf79a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4e666ba3d8afe2b3107b0762b2d8a339 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a9e8f53036933c47e470a36fd4087f9 = $(`<div id="html_6a9e8f53036933c47e470a36fd4087f9" style="width: 100.0%; height: 100.0%;">Camp Lemonnier (Djibouti) Type: Navy (US/African)</div>`)[0];
+                popup_4e666ba3d8afe2b3107b0762b2d8a339.setContent(html_6a9e8f53036933c47e470a36fd4087f9);
+            
+        
+
+        marker_f791e3b3cb8a13a44af8a5d58f2ce8d4.bindPopup(popup_4e666ba3d8afe2b3107b0762b2d8a339)
+        ;
+
+        
+    
+    
+                marker_f791e3b3cb8a13a44af8a5d58f2ce8d4.setIcon(icon_babc5d92e145e707d09cf6bb161cf79a);
+            
+    
+            var marker_17a0096b4be2b38b697785041cd985e6 = L.marker(
+                [13.6178, 25.3256],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_b199c7e01db2f45d1fdcc99f97e1fc70 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c174300042421b61fe4611f4f0461571 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a43694ecdc26403f4ce60871510df9b6 = $(`<div id="html_a43694ecdc26403f4ce60871510df9b6" style="width: 100.0%; height: 100.0%;">El Fasher Air Base (Sudan) Type: Air Force</div>`)[0];
+                popup_c174300042421b61fe4611f4f0461571.setContent(html_a43694ecdc26403f4ce60871510df9b6);
+            
+        
+
+        marker_17a0096b4be2b38b697785041cd985e6.bindPopup(popup_c174300042421b61fe4611f4f0461571)
+        ;
+
+        
+    
+    
+                marker_17a0096b4be2b38b697785041cd985e6.setIcon(icon_b199c7e01db2f45d1fdcc99f97e1fc70);
+            
+    
+            var marker_eb5332c85970c367e07e1470a875f98b = L.marker(
+                [6.4433, 3.4236],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_369568f0a5c1428ef99e53e2149a5545 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de677592122da74a0ce96dc78c235a64 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9acbcbbb78240652c8f2c36b79bc34f = $(`<div id="html_e9acbcbbb78240652c8f2c36b79bc34f" style="width: 100.0%; height: 100.0%;">Ikoyi Military Cantonment (Nigeria) Type: Army</div>`)[0];
+                popup_de677592122da74a0ce96dc78c235a64.setContent(html_e9acbcbbb78240652c8f2c36b79bc34f);
+            
+        
+
+        marker_eb5332c85970c367e07e1470a875f98b.bindPopup(popup_de677592122da74a0ce96dc78c235a64)
+        ;
+
+        
+    
+    
+                marker_eb5332c85970c367e07e1470a875f98b.setIcon(icon_369568f0a5c1428ef99e53e2149a5545);
+            
+    
+            var marker_c9065de386bce5148bece3379c135e27 = L.marker(
+                [4.8156, 7.0336],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_a62f852e0b7b10697f9dbe4990a83951 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01e383ee4960b2558db3fd7a87123d57 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e35a798e658f0238dab9bf83089f385 = $(`<div id="html_7e35a798e658f0238dab9bf83089f385" style="width: 100.0%; height: 100.0%;">Port Harcourt Barracks (Nigeria) Type: Army</div>`)[0];
+                popup_01e383ee4960b2558db3fd7a87123d57.setContent(html_7e35a798e658f0238dab9bf83089f385);
+            
+        
+
+        marker_c9065de386bce5148bece3379c135e27.bindPopup(popup_01e383ee4960b2558db3fd7a87123d57)
+        ;
+
+        
+    
+    
+                marker_c9065de386bce5148bece3379c135e27.setIcon(icon_a62f852e0b7b10697f9dbe4990a83951);
+            
+    
+            var marker_a4b8a0b5378530e7dc8c9927b5aebdcf = L.marker(
+                [-6.2662, 106.8915],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_def4f73399105b308dc9e64b46b71be7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3da2de7064971970e8333556d48193d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c8ce07fbb1aa9a677361cc0ebccfddb = $(`<div id="html_7c8ce07fbb1aa9a677361cc0ebccfddb" style="width: 100.0%; height: 100.0%;">Halim Perdanakusuma Air Base (Indonesia) Type: Air Force</div>`)[0];
+                popup_3da2de7064971970e8333556d48193d5.setContent(html_7c8ce07fbb1aa9a677361cc0ebccfddb);
+            
+        
+
+        marker_a4b8a0b5378530e7dc8c9927b5aebdcf.bindPopup(popup_3da2de7064971970e8333556d48193d5)
+        ;
+
+        
+    
+    
+                marker_a4b8a0b5378530e7dc8c9927b5aebdcf.setIcon(icon_def4f73399105b308dc9e64b46b71be7);
+            
+    
+            var marker_92c825db6d77cb673093398701c46fbe = L.marker(
+                [-5.0616, 119.5541],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_e0182fe1ee89257b6404643f3a7b18ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_50c23e0c3d53f9140c9d651dd2f12ada = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b828854367284379ce983cf062605906 = $(`<div id="html_b828854367284379ce983cf062605906" style="width: 100.0%; height: 100.0%;">Hasanuddin Air Base (Indonesia) Type: Air Force</div>`)[0];
+                popup_50c23e0c3d53f9140c9d651dd2f12ada.setContent(html_b828854367284379ce983cf062605906);
+            
+        
+
+        marker_92c825db6d77cb673093398701c46fbe.bindPopup(popup_50c23e0c3d53f9140c9d651dd2f12ada)
+        ;
+
+        
+    
+    
+                marker_92c825db6d77cb673093398701c46fbe.setIcon(icon_e0182fe1ee89257b6404643f3a7b18ac);
+            
+    
+            var marker_e4bfdf9cf5cbb5883e55e40caa1da879 = L.marker(
+                [-7.2236, 112.7458],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_58307e82e60528e03f352baa692873d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a4cf9bef0d34fbb03c7faf106173efaf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_abe4ce34a6195ad85c579fd4c00eedce = $(`<div id="html_abe4ce34a6195ad85c579fd4c00eedce" style="width: 100.0%; height: 100.0%;">Surabaya Naval Base (Indonesia) Type: Navy</div>`)[0];
+                popup_a4cf9bef0d34fbb03c7faf106173efaf.setContent(html_abe4ce34a6195ad85c579fd4c00eedce);
+            
+        
+
+        marker_e4bfdf9cf5cbb5883e55e40caa1da879.bindPopup(popup_a4cf9bef0d34fbb03c7faf106173efaf)
+        ;
+
+        
+    
+    
+                marker_e4bfdf9cf5cbb5883e55e40caa1da879.setIcon(icon_58307e82e60528e03f352baa692873d6);
+            
+    
+            var marker_8fcb146bbffaf160f415075658589116 = L.marker(
+                [-7.6152, 111.4331],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_b5c2ffb223a36cdc4bd90a02b52fc799 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ee12cda6b4a019cd90d3a879b2c3fd5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fed58055364a550f5a0a4ecb355e1f4d = $(`<div id="html_fed58055364a550f5a0a4ecb355e1f4d" style="width: 100.0%; height: 100.0%;">Iswahyudi Air Base (Indonesia) Type: Air Force</div>`)[0];
+                popup_8ee12cda6b4a019cd90d3a879b2c3fd5.setContent(html_fed58055364a550f5a0a4ecb355e1f4d);
+            
+        
+
+        marker_8fcb146bbffaf160f415075658589116.bindPopup(popup_8ee12cda6b4a019cd90d3a879b2c3fd5)
+        ;
+
+        
+    
+    
+                marker_8fcb146bbffaf160f415075658589116.setIcon(icon_b5c2ffb223a36cdc4bd90a02b52fc799);
+            
+    
+            var marker_4abe816ffec7197db89c1487bfc00d4b = L.marker(
+                [-6.104, 106.8771],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_377ae03b1e5b8f4fc5dd3363ab754086 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_409a6ce9ca01ed3c7931fa2a3bcc5699 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be2220c3981b00b8d9637ed152cdb325 = $(`<div id="html_be2220c3981b00b8d9637ed152cdb325" style="width: 100.0%; height: 100.0%;">Tanjung Priok Naval Base (Indonesia) Type: Navy</div>`)[0];
+                popup_409a6ce9ca01ed3c7931fa2a3bcc5699.setContent(html_be2220c3981b00b8d9637ed152cdb325);
+            
+        
+
+        marker_4abe816ffec7197db89c1487bfc00d4b.bindPopup(popup_409a6ce9ca01ed3c7931fa2a3bcc5699)
+        ;
+
+        
+    
+    
+                marker_4abe816ffec7197db89c1487bfc00d4b.setIcon(icon_377ae03b1e5b8f4fc5dd3363ab754086);
+            
+    
+            var marker_b8ca34af01a05fcf9f90893b721cd5a0 = L.marker(
+                [-2.5337, 140.7182],
+                {
+}
+            ).addTo(map_db29f070197d8c80c9c4dee9599524b1);
+        
+    
+            var icon_69446c0ffe026b9b96bd42332f9f32f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0122caec0a4f27a088fff92c4f09d00f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f78280c9ebf81ad228fbd1396ec936c7 = $(`<div id="html_f78280c9ebf81ad228fbd1396ec936c7" style="width: 100.0%; height: 100.0%;">Jayapura Military Post (Indonesia) Type: Army</div>`)[0];
+                popup_0122caec0a4f27a088fff92c4f09d00f.setContent(html_f78280c9ebf81ad228fbd1396ec936c7);
+            
+        
+
+        marker_b8ca34af01a05fcf9f90893b721cd5a0.bindPopup(popup_0122caec0a4f27a088fff92c4f09d00f)
+        ;
+
+        
+    
+    
+                marker_b8ca34af01a05fcf9f90893b721cd5a0.setIcon(icon_69446c0ffe026b9b96bd42332f9f32f8);
+            
+</script>
+</html>
